@@ -1,35 +1,36 @@
-Sun Nov 08 22:04:45 2020
+Sun Nov 08 22:31:26 2020
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
  
 
-Bootstrap to the start of init.init took 0.06s
-Early init took 0.08s
-Loader init took 0.02s
-Loading error handling took 0.19s
-Loading script took 0.94s
-Loading save slot metadata. took 0.01s
+Bootstrap to the start of init.init took 0.07s
+Early init took 0.00s
+Loader init took 0.33s
+Loading error handling took 0.16s
+Loading script took 1.52s
+Loading save slot metadata. took 0.05s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.15s
-Loading analysis data took 0.05s
+Running init code took 0.51s
+Loading analysis data took 0.04s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
-Dump and make backups. took 0.06s
+Backing up script files to 'C:\\Users\\nikya\\AppData\\Roaming/RenPy/backups\\Counting Dreams Novela Visual':
+Dump and make backups. took 0.39s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.01s
+Initial gc. took 0.02s
 DPI scale factor: 1.000000
-Creating interface object took 0.26s
+Creating interface object took 0.72s
 Cleaning stores took 0.00s
-Init translation took 0.02s
+Init translation took 0.06s
 Build styles took 0.00s
-Load screen analysis took 0.06s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.06s
+Load screen analysis took 0.02s
+Analyze screens took 0.01s
+Save screen analysis took 0.08s
+Prepare screens took 0.05s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.07s
+Save bytecode. took 0.06s
 Running _start took 0.00s
 Performance test:
 Interface start took 0.02s
@@ -291,27 +292,11 @@ Texture testing:
 - 2048px textures work.
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-Total time until interface ready: 3.80200004578s
+Total time until interface ready: 9.02400016785s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
 - Frame drawn at 0.017667 seconds.
-- Frame drawn at 0.061666 seconds.
-- Frame drawn at 0.070667 seconds.
-- Frame drawn at 0.147666 seconds.
-- 0.147666 seconds to render 5 frames.
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.01s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-The window was minimized.
-The window was restored.
-
-primary display bounds: (0, 0, 1366, 768)
-swap interval: 1 frames
-Windowed mode.
-Screen sizes: virtual=(1280, 720) physical=(1184, 666) drawable=(1184, 666)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
+- Frame drawn at 0.077667 seconds.
+- Frame drawn at 0.081667 seconds.
+- Frame drawn at 0.121667 seconds.
+- 0.121667 seconds to render 5 frames.
