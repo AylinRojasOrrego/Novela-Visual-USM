@@ -28,6 +28,8 @@ label start:
 
     e "Waitea un poco mas, y revisa el twitter si quieres"
 
+    e "holi, momento de probar github"
+
     # This ends the game.
 
     return
