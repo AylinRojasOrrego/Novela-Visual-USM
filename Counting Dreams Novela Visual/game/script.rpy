@@ -24,9 +24,9 @@ label start:
 
     # These display lines of dialogue.
 
-    e "You've created a new Ren'Py game."
+    e "Estamos trabajando para que sea una novela bonita"
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+    e "Waitea un poco mas, y revisa el twitter si quieres"
 
     # This ends the game.
 
