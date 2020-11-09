@@ -385,4 +385,20 @@ The window was restored.
 primary display bounds: (0, 0, 1366, 768)
 swap interval: 1 frames
 Windowed mode.
-Screen sizes:
+Screen sizes: virtual=(1280, 720) physical=(1184, 666) drawable=(1184, 666)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.01s
+Load screen analysis took 0.04s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+The window was minimized.
+The window was restored.
+
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1184, 666) drawable
