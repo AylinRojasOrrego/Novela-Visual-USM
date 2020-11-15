@@ -3,32 +3,19 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Eileen")
-
+define annie = Character("Annie", color="#FF5C00")
+image annie_normal="Annie_Act1_01.png"
+image biblioteca="Stage_01.png"
 
 # The game starts here.
 
 label start:
+    scene biblioteca
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-
-    scene bg room
-
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
-    show eileen happy
-
+    show annie_normal:
+        xzoom 0.40 yzoom 0.40
     # These display lines of dialogue.
-
-    e "Estamos trabajando para que sea una novela bonita"
-
-    e "Waitea un poco mas, y revisa el twitter si quieres"
-
-    e "holi, momento de probar github"
+    annie "Wena,¿Cómo estás? ¿Cómo te fue en las pruebas?."
 
     # This ends the game.
 
