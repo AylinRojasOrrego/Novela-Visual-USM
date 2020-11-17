@@ -14,6 +14,7 @@ label start:
 
     show annie_normal:
         xzoom 0.40 yzoom 0.40
+        xpos 500 ypos 200
     # These display lines of dialogue.
     annie "Wena,¿Cómo estás? ¿Cómo te fue en las pruebas?."
 

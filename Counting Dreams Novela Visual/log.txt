@@ -1,4 +1,4 @@
-Tue Nov 17 12:25:17 2020
+Tue Nov 17 12:49:55 2020
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
  
@@ -7,11 +7,11 @@ Bootstrap to the start of init.init took 0.06s
 Early init took 0.00s
 Loader init took 0.02s
 Loading error handling took 0.02s
-Loading script took 0.19s
+Loading script took 0.18s
 Loading save slot metadata. took 0.01s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.06s
+Running init code took 0.07s
 Loading analysis data took 0.03s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
@@ -29,8 +29,8 @@ Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.07s
 Prepare screens took 0.05s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.13s
+Save pyanalysis. took 0.07s
+Save bytecode. took 0.06s
 Running _start took 0.00s
 Performance test:
 Interface start took 0.02s
@@ -292,11 +292,10 @@ Texture testing:
 - 2048px textures work.
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-Total time until interface ready: 1.66799998283s
+Total time until interface ready: 1.3069999218s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
 - Frame drawn at 0.016667 seconds.
-- Frame drawn at 0.058667 seconds.
-- Frame drawn at 0.061667 seconds.
-- Frame drawn at 0.137667 seconds.
-- 0.137667 seconds to render 5 frames.
+- Frame drawn at 0.049667 seconds.
+- Frame drawn at 0.084666 seconds.
+- Frame drawn at 0
