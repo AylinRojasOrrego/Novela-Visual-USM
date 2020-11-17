@@ -22,24 +22,24 @@ init python:
 ##
 ## The colors of text in the interface.
 
-## An accent color used throughout the interface to label and highlight text.
-define gui.accent_color = '#cc6600'
+## An accent color used throughout the interface to label and highlight text.Titulo menu y color al escribir.
+define gui.accent_color = '#ff8000'
 
-## The color used for a text button when it is neither selected nor hovered.
-define gui.idle_color = '#aaaaaa'
+## The color used for a text button when it is neither selected nor hovered.Opciones de menu(botones)
+define gui.idle_color = '#45484f'
 
 ## The small color is used for small text, which needs to be brighter/darker to
-## achieve the same effect.
-define gui.idle_small_color = '#888888'
+## achieve the same effect. Botones que aparecen abajo durante la historia
+define gui.idle_small_color = '#70a2ff' 
 
-## The color that is used for buttons and bars that are hovered.
-define gui.hover_color = '#cc6600'
+## The color that is used for buttons and bars that are hovered.Al poner el mouse sobre botones de menu.
+define gui.hover_color = '#6200ff'
 
 ## The color used for a text button when it is selected but not focused. A
-## button is selected if it is the current screen or preference value.
-define gui.selected_color = '#555555'
+## button is selected if it is the current screen or preference value.Le puse rosado, no se que es
+define gui.selected_color = '#ff00d4'
 
-## The color used for a text button when it cannot be selected.
+## The color used for a text button when it cannot be selected. vi que cambiaba un boton de los de abajo durante la historia
 define gui.insensitive_color = '#aaaaaa7f'
 
 ## Colors used for the portions of bars that are not filled in. These are not
