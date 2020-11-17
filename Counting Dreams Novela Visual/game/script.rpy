@@ -34,6 +34,8 @@ label start:
     prota "Me llamo [MiNombre]"
     
     "Muy bien [MiNombre], comencemos con esta aventura"
+
+    scene biblioteca
     prota "Ha sido una semana difícil, pero he logrado pasar mis certámenes"
     prota "Quizá deba tomarme un descanso, ir a caminar o…"
     prota "Ah mira, ahí viene Annie, ¿le habrá ido bien en su presentación?"
