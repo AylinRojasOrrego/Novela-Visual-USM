@@ -9,10 +9,11 @@ image annie_normal="Annie_Act1_01.png"
 image annie_happy_bien="Annie_Act1_02.png"
 image annie_sad_mal="Annie_Act1_01_Sad.png"
 image annie_phone="Annie_Act1_01_Phone.png"
-
+image confesion="confesion.jpg"
 
 image biblioteca="Stage_01.png"
 image inicio= "inicio1.png"
+
 
 $ MiNombre= ''
 # The game starts here.
@@ -60,19 +61,38 @@ label start:
             xzoom 0.40 yzoom 0.40
             xpos 500 ypos 100
         annie "¡Genial!, para celebrar, ¿qué te parece si me ayudas a resolver este acertijo que salió en las confesiones? "
+        prota "¿A qué acertijo te refieres?"
+        hide annie_happy_bien with dissolve
+        show annie_phone with dissolve:
+            xzoom 0.40 yzoom 0.40
+            xpos 500 ypos 100
 
     elif estado=="Mal":
         show annie_sad_mal with dissolve:
             xzoom 0.40 yzoom 0.40
             xpos 500 ypos 100
         annie "Pucha que mal, oye, para animarte, ¿Y si me ayudas a resolver este juego de acertijos que salió en la página de confesiones? "
+        prota "¿A qué acertijo te refieres?"
+        hide annie_sad_mal with dissolve
+        show annie_phone with dissolve:
+            xzoom 0.40 yzoom 0.40
+            xpos 500 ypos 100
 
-    prota "¿A qué acertijo te refieres?"
+    
+    show confesion with dissolve:
+        xpos 450 ypos 0
+        xzoom 0.65 yzoom 0.62
+    "..."
+    hide confesion with dissolve
 
-    show annie_phone with dissolve:
+    hide annie_phone with dissolve
+    show annie_happy_bien with dissolve:
         xzoom 0.40 yzoom 0.40
         xpos 500 ypos 100
     
+    annie "¿Viste? Va a ser entretenido,vamos."
+
+
     # This ends the game.
 
     return
