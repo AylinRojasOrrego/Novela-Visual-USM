@@ -91,23 +91,6 @@ label start:
         xpos 500 ypos 100
     
     annie "¿Viste? Va a ser entretenido,vamos."
-    prota "Está bien, está bien, vamos" 
-    prota "Pero ¿Por dónde quieres empezar a buscar?"
-    #inserte annie pensativa ajshdj
-    annie "Uy, cierto, esto…"
-
-    hide annie_happy_bien with dissolve
-    show annie_normal with dissolve
-    annie "no se escoge tú"
-
-    menu:
-        "❃Lugar❃":
-            jump lugar
-        "Hora[ℎ]":
-            jump hora
-        "Contraseña☶":
-            jump contraseña
-
 
 
     # This ends the game.
