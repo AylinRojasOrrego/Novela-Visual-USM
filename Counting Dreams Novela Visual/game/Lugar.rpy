@@ -1,15 +1,13 @@
 label lugar:
-    "Aquí comienza la escena de lugar"
+    #"Aquí comienza la escena de lugar"
     "Con Annie decides ir en búsqueda del lugar de la fiesta"
     prota "¿Por dónde empezamos?"
     annie "Mejor veamos la publicación de nuevo"
-    prota "¿Crees que habrán pistas ahí?”"
+    prota "¿Crees que habrán pistas ahí?"
     annie "No creo que nos dejen sin pista alguna"
     show annie_phone with dissolve:
-            xzoom 0.40 yzoom 0.40
-            xpos 500 ypos 100
-
-    
+        xzoom 0.40 yzoom 0.40
+        xpos 500 ypos 100    
     show confesion with dissolve:
         xpos 450 ypos 0
         xzoom 0.65 yzoom 0.62

@@ -13,13 +13,20 @@ image confesion="confesion.jpg"
 
 image biblioteca="Stage_01.png"
 image inicio= "inicio1.png"
-
-
+image playa= "playita.png"
+$ pista= "0"
 $ MiNombre= ''
 # The game starts here.
 
 label start:
     scene inicio
+    menu:
+        "Tay en modo dev?"
+        "Yes pues":
+            $ dev= True
+        "no pue, que es eso del modo dev, aiuda mama, no sé programar":
+            "wenu, continua normal"    
+    
     "Bienvenid@ a $Nombre Novela$"
     "Antes de comenzar con la historia, debemos hacerte unas preguntas..."
     "¿Eres Chica o Chico?"
@@ -37,6 +44,8 @@ label start:
     "Muy bien [MiNombre], comencemos con esta aventura"
 
     scene biblioteca
+    if dev:
+        jump modo_dev
     prota "Ha sido una semana difícil, pero he logrado pasar mis certámenes"
     prota "Quizá deba tomarme un descanso, ir a caminar o…"
     prota "Ah mira, ahí viene Annie, ¿le habrá ido bien en su presentación?"
@@ -101,6 +110,12 @@ label start:
     show annie_normal with dissolve:
     annie "No se, escoge tú."
 
+    label modo_dev:
+        if dev:
+            show annie_normal with dissolve:
+                xzoom 0.40 yzoom 0.40
+                xpos 500 ypos 100
+        
     menu: 
         "❃Lugar❃":
             jump lugar
@@ -108,6 +123,12 @@ label start:
             jump hora 
         "Contraseña☳":
             jump contraseña 
+    
+    label primera_pista:
+        if pista ==1:
+            annie "Genial, ya tenemos una, vamos por las siguientes para llegar a tiempo"
+        elif pista==0:
+            annie "Vaya, no pudimos encontrar nada, pasemos a otro acertijo."
 
     # This ends the game.
 
