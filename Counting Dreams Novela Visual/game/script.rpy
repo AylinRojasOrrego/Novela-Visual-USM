@@ -45,7 +45,7 @@ label start:
         xzoom 0.40 yzoom 0.40
         xpos 500 ypos 100
     # These display lines of dialogue.
-    annie "[MiNombre] ¿Cómo te fue en las pruebas?."
+    annie "Wena [MiNombre] ¿Cómo te fue en las pruebas?."
 
     menu:
         "Bien":
