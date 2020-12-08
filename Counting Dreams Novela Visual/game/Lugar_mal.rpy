@@ -38,4 +38,5 @@ label lugar_mal:
         xzoom 0.40 yzoom 0.40
         xpos 500 ypos 100
     $ pista=0
+    $ 1pista = "Lugar"
     jump primera_pista
