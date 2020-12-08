@@ -129,6 +129,30 @@ label start:
             annie "Genial, ya tenemos una, vamos por las siguientes para llegar a tiempo"
         elif pista==0:
             annie "Vaya, no pudimos encontrar nada, pasemos a otro acertijo."
+    if 1pista="Lugar":
+        menu optional_name:
+            annie"Tenemos estas opciones"
+            "Hora":
+                #jump hora
+            "Contraseña":
+                #jump contraseña
+    elif 1pista="Hora":
+        menu optional_name:
+            annie"Tenemos estas opciones"
+            "Choice 1":
+                #jump lugar
+            "Choice 2":
+                #jump contraseña
+    elif 1pista=contraseña:
+        menu optional_name:
+            annie"Tenemos estas opciones"
+            "Lugar":
+                #jump lugar
+            "Hora":
+                #jump hora
+            
+            
+            
 
     # This ends the game.
 
