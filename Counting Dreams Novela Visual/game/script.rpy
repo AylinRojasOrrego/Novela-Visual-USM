@@ -10,10 +10,13 @@ image annie_happy_bien="Annie_Act1_02.png"
 image annie_sad_mal="Annie_Act1_01_Sad.png"
 image annie_phone="Annie_Act1_01_Phone.png"
 image confesion="confesion.jpg"
+image annie_muyfeliz ="Annie_Act1_02_Buena Desicion.png"
 
 image biblioteca="Stage_01.png"
 image inicio= "inicio1.png"
 image playa= "playita.png"
+image piscina = "piscina.png"
+image pasillo1= "pasillo_piscina.png"
 $ pista= "0"
 $ MiNombre= ''
 # The game starts here.
