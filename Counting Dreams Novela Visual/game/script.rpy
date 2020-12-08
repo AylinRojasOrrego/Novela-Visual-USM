@@ -18,6 +18,9 @@ image playa= "playita.png"
 image piscina = "piscina.png"
 image pasillo1= "pasillo_piscina.png"
 $ pista= "0"
+$ pista1= ''
+$ pista2= ''
+$ pista3= ''  
 $ MiNombre= ''
 # The game starts here.
 
@@ -121,10 +124,13 @@ label start:
         
     menu: 
         "❃Lugar❃":
+            $ pista1= "lugar"
             jump lugar
         "Hora[ℎ]":
+            $ pista1= "hora"
             jump hora 
         "Contraseña☳":
+            $ pista1= "contraseña"
             jump contraseña 
     
     label primera_pista:
@@ -132,27 +138,34 @@ label start:
             annie "Genial, ya tenemos una, vamos por las siguientes para llegar a tiempo"
         elif pista==0:
             annie "Vaya, no pudimos encontrar nada, pasemos a otro acertijo."
-    if 1pista="Lugar":
-        menu optional_name:
+
+    if pista1=="lugar" :
+        menu:
             annie"Tenemos estas opciones"
             "Hora":
-                #jump hora
+                $ pista2= "hora"
+                jump hora
             "Contraseña":
-                #jump contraseña
-    elif 1pista="Hora":
-        menu optional_name:
-            annie"Tenemos estas opciones"
-            "Choice 1":
-                #jump lugar
-            "Choice 2":
-                #jump contraseña
-    elif 1pista=contraseña:
-        menu optional_name:
+                $ pista2= "contraseña"
+                jump contraseña
+    elif pista1=="hora":
+        menu:
+            annie"tenemos estas opciones"
+            "Lugar":
+                $ pista2= "lugar"
+                jump lugar
+            "Contraseña":
+                $ pista2= "contraseña"
+                jump contraseña
+    elif pista1=="contraseña":
+        menu:
             annie"Tenemos estas opciones"
             "Lugar":
-                #jump lugar
+                $ pista2= "lugar"
+                jump lugar
             "Hora":
-                #jump hora
+                $ pista2= "hora"
+                jump hora
             
             
             

@@ -35,6 +35,8 @@ label lugar_bien:
         xpos 500 ypos 200
     annie "Decia 'Patio el Cañón', bastante autoexplicatorio"
     prota "Buena, tenemos una respuesta"
+    $ pista =1
+    jump primera_pista
 
 
 
