@@ -18,7 +18,7 @@ label lugar:
     show annie_happy_bien with dissolve:
         xzoom 0.40 yzoom 0.40
         xpos 500 ypos 100
-    prota "Ah, un poema, ¿A qué se referirá"
+    prota "Ah, un poema, ¿A qué se referirá?"
     #hide annie_happy_bien
     #show annie_pensativa (I guess)
     annie "Bueno, creo que se puede referir a la playa"
@@ -28,10 +28,10 @@ label lugar:
     #annie "Bueno, tu escoges ahora, ¿Dónde quieres ir a buscar?"
     menu Decision_lugar:
         annie "Bueno, tu escoges ahora, ¿Dónde quieres ir a buscar?"
-        "Vayamos a la Playa":
+        "Puede que tengas razón, vayamos a la Playa":
             #block of code to run
             jump lugar_mal
-        "¿Qué tal si vamos a la piscina de la U?":
+        "¿Qué tal si mejor vamos a la piscina?":
             #block of code to run
             jump lugar_bien
         
