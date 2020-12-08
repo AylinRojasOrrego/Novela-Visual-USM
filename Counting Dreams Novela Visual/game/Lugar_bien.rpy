@@ -34,10 +34,18 @@ label lugar_bien:
         xzoom 0.50 yzoom 0.50
         xpos 500 ypos 200
     annie "Decia 'Patio el Cañón', bastante autoexplicatorio"
+    $ items.append("lugar: Patio el Cañon")
+    $ pista +=1
     prota "Buena, tenemos una respuesta"
-    $ pista =1
-    jump primera_pista
-
+    if decisiones==1:
+        annie "nos quedan 2 cosas por buscar"
+        jump primera_pista
+    elif decisiones==2:
+        annie "nos queda 1 pista por encontar"
+        jump segunda_pista
+    elif decisiones==3:
+        annie "No hay nada mas por buscar"
+        jump tercera_pista
 
 
     

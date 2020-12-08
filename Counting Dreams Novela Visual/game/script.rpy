@@ -1,5 +1,18 @@
 ﻿# The script of the game goes in this file.
-
+init python:
+    showitems = True
+    items=[]
+    def display_items_overlay():
+        if showitems:
+            inventory_show = "Pistas: "
+            for i in range(0,len(items)):
+                item_name = items(i).title()
+                if i > 0:
+                    inventory_show+= ", "
+                inventory_show += item_name
+            ui.frame()
+            ui.text(inventory_show)
+    config.overlay_functions.append(display_items_overlay)
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
@@ -17,7 +30,6 @@ image inicio= "inicio1.png"
 image playa= "playita.png"
 image piscina = "piscina.png"
 image pasillo1= "pasillo_piscina.png"
-$ pista= "0"
 $ pista1= ''
 $ pista2= ''
 $ pista3= ''  
@@ -25,6 +37,8 @@ $ MiNombre= ''
 # The game starts here.
 
 label start:
+    $ items=[]
+    $ showitems= False
     scene inicio
     menu:
         "Tay en modo dev?"
@@ -107,6 +121,7 @@ label start:
     
     annie "¿Viste? Va a ser entretenido,vamos."
     prota "Está bien, está bien, vamos"
+    $ showitems= True
     prota "Pero ¿Por dónde quieres empezar a buscar?"
 
     #inserte annie pensativa
@@ -124,48 +139,60 @@ label start:
         
     menu: 
         "❃Lugar❃":
-            $ pista1= "lugar"
+            $ decision1= "lugar"
+            $ decisiones=1
+            $ pista=0
             jump lugar
         "Hora[ℎ]":
-            $ pista1= "hora"
+            $ decision1= "hora"
+            $ decisiones=1
+            $ pista=0
             jump hora 
         "Contraseña☳":
-            $ pista1= "contraseña"
+            $ decision1= "contraseña"
+            $ decisiones=1
+            $ pista=0
             jump contraseña 
     
     label primera_pista:
-        if pista ==1:
-            annie "Genial, ya tenemos una, vamos por las siguientes para llegar a tiempo"
+        if pista==1:
+            prota "Ahora, ¿Qué podemos buscar?"
+            annie "Escogiste bien ahora, escoge de nuevo"
         elif pista==0:
             annie "Vaya, no pudimos encontrar nada, pasemos a otro acertijo."
-
-    if pista1=="lugar" :
-        menu:
-            annie"Tenemos estas opciones"
-            "Hora":
-                $ pista2= "hora"
-                jump hora
-            "Contraseña":
-                $ pista2= "contraseña"
-                jump contraseña
-    elif pista1=="hora":
-        menu:
-            annie"tenemos estas opciones"
-            "Lugar":
-                $ pista2= "lugar"
-                jump lugar
-            "Contraseña":
-                $ pista2= "contraseña"
-                jump contraseña
-    elif pista1=="contraseña":
-        menu:
-            annie"Tenemos estas opciones"
-            "Lugar":
-                $ pista2= "lugar"
-                jump lugar
-            "Hora":
-                $ pista2= "hora"
-                jump hora
+        if decision1=="lugar":
+                menu:
+                    annie"Tenemos estas opciones"
+                    "Hora[ℎ]":
+                        $ decision2= "hora"
+                        $ decisiones+=1
+                        jump hora
+                    "Contraseña☳":
+                        $ decision2= "contraseña"
+                        $ decisiones+=1
+                        jump contraseña
+        elif decision1=="hora":
+                menu:
+                    annie"tenemos estas opciones"
+                    "❃Lugar❃":
+                        $ decision2= "lugar"
+                        $ decisiones+=1
+                        jump lugar
+                    "Contraseña☳":
+                        $ decision2= "contraseña"
+                        $ decisiones+=1
+                        jump contraseña
+        elif decision1=="contraseña":
+                menu:
+                    annie"Tenemos estas opciones"
+                    "❃Lugar❃":
+                        $ decision2= "lugar"
+                        $ decisiones+=1
+                        jump lugar
+                    "Hora[ℎ]":
+                        $ decision2= "hora"
+                        $ decisiones+=1
+                        jump hora
             
             
             

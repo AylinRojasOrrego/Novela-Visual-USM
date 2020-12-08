@@ -37,5 +37,13 @@ label lugar_mal:
     show annie_normal with dissolve:
         xzoom 0.40 yzoom 0.40
         xpos 500 ypos 100
-    $ pista=0
-    jump primera_pista
+        
+    if decisiones==1:
+        annie "nos quedan 2 cosas por buscar"
+        jump primera_pista
+    elif decisiones==2:
+        annie "nos queda 1 pista por encontar"
+        jump segunda_pista
+    elif decisiones==3:
+        annie "No hay nada mas por investigar"
+        jump tercera_pista
