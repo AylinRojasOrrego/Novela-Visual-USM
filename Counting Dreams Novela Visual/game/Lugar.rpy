@@ -19,13 +19,13 @@ label lugar:
         xzoom 0.40 yzoom 0.40
         xpos 500 ypos 100
     prota "Ah, un poema, ¿A qué se referirá?"
-    #hide annie_happy_bien
-    #show annie_pensativa (I guess)
+    hide annie_happy_bien
+    show annie_pensativa
     annie "Bueno, creo que se puede referir a la playa"
     prota "Hmm, yo estaba pensando en la piscina de la universidad"
-    #hide annie_pensativa
-    #show annie_happy_bien
-    #annie "Bueno, tu escoges ahora, ¿Dónde quieres ir a buscar?"
+    hide annie_pensativa
+    show annie_happy_bien
+    annie "Bueno, tu escoges ahora, ¿Dónde quieres ir a buscar?"
     menu Decision_lugar:
         annie "Bueno, tu escoges ahora, ¿Dónde quieres ir a buscar?"
         "Puede que tengas razón, vayamos a la Playa":

@@ -15,21 +15,36 @@ init python:
     config.overlay_functions.append(display_items_overlay)
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
-
-define annie = Character("Annie", color="#00ff04")
 define prota = DynamicCharacter("MiNombre", color="#ff4d00")
+
+define annie = Character("Annie", color="#00ff04",image='annie')
 image annie_normal="Annie_Act1_01.png"
 image annie_happy_bien="Annie_Act1_02.png"
 image annie_sad_mal="Annie_Act1_01_Sad.png"
 image annie_phone="Annie_Act1_01_Phone.png"
-image confesion="confesion.jpg"
 image annie_muyfeliz ="Annie_Act1_02_Buena Desicion.png"
+image annie_pensativa ='Annie_Act1_02_Pensativa.png'
+image annie_sorprendida ='Annie_Act1_02_Sorprendida.png'
+image annie_mirando_cel='Annie_ActLugar_VerCelular.png'
+
+define derek = Character('Derek',color ='#8E0A38', image='derek')
+image derek flexiones='Dereck_ActHora_DespuesFlexiones.png'
+image derek sorprendido='Dereck_ActHora_Sorprendido.png'
+image derek hablando='Dereck_ActHora_Respondiendo.png'
+image derek feliz='Dereck_ActHora_RespondiendoFeliz.png'
+image derek mostrando='Dereck_ActHora_Señalando.png'
+image derek pensando='Dereck_ActHora_Pensando.png'
+
+image confesion="confesion.jpg"
 
 image biblioteca="Stage_01.png"
 image inicio= "inicio1.png"
 image playa= "playita.png"
 image piscina = "piscina.png"
 image pasillo1= "pasillo_piscina.png"
+image cancha='Cancha.png'
+image cancha_bancas='Cancha_bancas.png'
+image cancha_gradas='Cancha_gradas.png'
 $ pista1= ''
 $ pista2= ''
 $ pista3= ''  
@@ -196,7 +211,7 @@ label start:
             
             
             
-
+    'holi 7u7r'
     # This ends the game.
 
     return
