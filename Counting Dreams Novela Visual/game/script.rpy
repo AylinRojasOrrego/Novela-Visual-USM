@@ -62,6 +62,7 @@ label start:
     menu:
         "Tay en modo dev?"
         "Yes pues":
+            "Warning que esto te disablea un par de cosas"
             $ dev= True
         "no pue, que es eso del modo dev, aiuda mama, no sé programar":
             "wenu, continua normal" 
