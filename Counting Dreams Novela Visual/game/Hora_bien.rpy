@@ -116,7 +116,7 @@ label hora_bien:
             show kylie negando with dissolve
             kylie '¡Exacto! Ahora por favor vayanse'
             show kylie ignorando with dissolve
-            kylie 'Que mate no se pasa solo'
+            kylie 'Que matemáticas no se pasa solo'
             hide kylie with dissolve
             'Dejan tranquila a la joven'
             show annie sad_mal with easeinright:

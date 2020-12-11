@@ -48,6 +48,7 @@ image pasillo1= "pasillo_piscina.png"
 image cancha='Cancha.png'
 image cancha_bancas='Cancha_bancas.png'
 image cancha_gradas='Cancha_gradas.png'
+image plaza='Hora_plaza.png'
 
 $ desicion1= ''
 $ desicion2= ''
