@@ -4,9 +4,7 @@ label hora:
     annie 'Revisemos una publicación una vez más'
     prota '¿Crees que nos dejaron pistas ahí?'
     annie 'Es lo más probable'
-    show annie phone with dissolve:
-        xzoom 0.40 yzoom 0.40
-        xpos 500 ypos 100    
+    show annie phone with dissolve   
     show confesion with dissolve:
         xpos 450 ypos 0
         xzoom 0.65 yzoom 0.62

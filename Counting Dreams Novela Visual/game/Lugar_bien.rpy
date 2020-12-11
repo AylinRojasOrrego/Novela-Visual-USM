@@ -24,7 +24,7 @@ label lugar_bien:
     prota "Genial, ¿Cuál es la respuesta entonces?"
 
     show Lugar:
-        align (0.5 ,0)
+        align (0.2 , 0.2)
     with dissolve    
 
     $Lu ='22:30[hrs]'

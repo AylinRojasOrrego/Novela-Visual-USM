@@ -22,6 +22,14 @@ image derek feliz='Dereck_ActHora_RespondiendoFeliz.png'
 image derek mostrando='Dereck_ActHora_Señalando.png'
 image derek pensando='Dereck_ActHora_Pensando.png'
 
+define kylie = Character('Kylie', color='EE54FF', image='kylie')
+image kylie leyendo='Kylie_ActHora_Leyendo.png'
+image kylie hablando='Kylie_ActHora_Hablando.png'
+image kylie ignorando ='Kylie_ActHora_Ignorando.png'
+image kylie mirando='Kylie_ActHora_Mirando.png'
+image kylie riendo='Kylie_ActHora_Riendo.png'
+image kylie negando='Kylie_ActHora_Negando.png'
+
 image confesion="confesion.jpg"
 
 image Hora='Hora.png'
@@ -222,8 +230,6 @@ label start:
                         $ decision3= "lugar"
                         $ decisiones+=1
                         jump lugar
-
-    
             
             
             

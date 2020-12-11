@@ -5,9 +5,9 @@ label lugar:
     annie "Mejor veamos la publicación de nuevo"
     prota "¿Crees que habrán pistas ahí?"
     annie "No creo que nos dejen sin pista alguna"
-    show annie phone with dissolve:
-        xzoom 0.40 yzoom 0.40
-        xpos 500 ypos 100    
+    show annie phone with dissolve#:
+        #xzoom 0.40 yzoom 0.40
+        #xpos 500 ypos 100    
     show confesion with dissolve:
         xpos 450 ypos 0
         xzoom 0.65 yzoom 0.62
