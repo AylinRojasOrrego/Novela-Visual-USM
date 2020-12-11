@@ -4,7 +4,7 @@ label hora:
     annie 'Revisemos una publicación una vez más'
     prota '¿Crees que nos dejaron pistas ahí?'
     annie 'Es lo más probable'
-    show annie_phone with dissolve:
+    show annie phone with dissolve:
         xzoom 0.40 yzoom 0.40
         xpos 500 ypos 100    
     show confesion with dissolve:
@@ -14,10 +14,7 @@ label hora:
     annie 'Un campo abierto veras y entre el verde buscaras'
     hide confesion with dissolve
 
-    hide annie_phone with dissolve
-    show annie_happy_bien with dissolve:
-        xzoom 0.40 yzoom 0.40
-        xpos 500 ypos 100
+    show annie happy_bien with dissolve
     prota 'Ah, una rima, ¿A qué se referirá?'
     #hide annie_happy_bien
     #show annie_pensativa (I guess)
@@ -29,8 +26,10 @@ label hora:
     menu Desición_hora:
         annie '¿A dónde deberíamos buscar?'
         'Quizas tienes razón... ¡Vamos a la cancha!':
+            show annie muyfeliz with dissolve
             #block of code to run
             jump hora_bien
         'Debe ser alguna plaza de aquí cerca!':
+            show annie muymal with dissolve
             #block of code to run
             jump hora_mal

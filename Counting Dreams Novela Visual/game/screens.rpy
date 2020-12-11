@@ -744,7 +744,7 @@ screen preferences():
 
                 vbox:
                     style_prefix "check"
-                    label _("Skip")
+                    label _("Saltar")
                     textbutton _("Texto sin Ver") action Preference("skip", "toggle")
                     textbutton _("Después de las desiciónes") action Preference("after choices", "toggle")
                     textbutton _("Transiciónes") action InvertSelected(Preference("transitions", "toggle"))
@@ -1129,6 +1129,7 @@ style help_label_text:
 ################################################################################
 ## Additional screens
 ################################################################################
+
 
 
 ## Confirm screen ##############################################################
