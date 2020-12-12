@@ -69,7 +69,7 @@ label start:
             "wenu, continua normal" 
             $ dev= False   
     
-    "Bienvenid@ a $Nombre Novela$"
+    'Bienvenid@ a "Una fiesta entre pistas"'
     "Antes de comenzar con la historia, debemos hacerte unas preguntas..."
     "¿Eres Chica o Chico?"
     menu:
