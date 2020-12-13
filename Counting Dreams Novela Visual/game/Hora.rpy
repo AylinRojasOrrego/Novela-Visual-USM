@@ -25,9 +25,7 @@ label hora:
         annie '¿A dónde deberíamos buscar?'
         'Quizas tienes razón... ¡Vamos a la cancha!':
             show annie muyfeliz with dissolve
-            #block of code to run
             jump hora_bien
         'Debe ser alguna plaza de aquí cerca!':
             show annie muymal with dissolve
-            #block of code to run
             jump hora_mal

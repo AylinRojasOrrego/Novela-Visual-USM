@@ -49,6 +49,7 @@ image cancha='Cancha.png'
 image cancha_bancas='Cancha_bancas.png'
 image cancha_gradas='Cancha_gradas.png'
 image plaza='Hora_plaza.png'
+image calle="Terraza.png"
 
 $ desicion1= ''
 $ desicion2= ''
@@ -69,7 +70,7 @@ label start:
             "wenu, continua normal" 
             $ dev= False   
     
-    'Bienvenid@ a "Una fiesta entre pistas"'
+    "Bienvenid@ a Una fiesta entre pistas"
     "Antes de comenzar con la historia, debemos hacerte unas preguntas..."
     "¿Eres Chica o Chico?"
     menu:
@@ -232,6 +233,13 @@ label start:
                         $ decision3= "lugar"
                         $ decisiones+=1
                         jump lugar
+    label tercera_pista:
+        if pista<=1:
+            prota "Ahora, ¿Qué buscamos?"
+            annie "Vas muy bien, sigamos así"
+        elif pista<2:
+            annie "Vaya, no pudimos encontrar nada, pasemos a otro acertijo."
+
             
             
             

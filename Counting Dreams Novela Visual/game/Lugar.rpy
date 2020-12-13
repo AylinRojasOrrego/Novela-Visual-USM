@@ -24,9 +24,7 @@ label lugar:
     menu Decision_lugar:
         annie "Bueno, tu escoges ahora, ¿Dónde quieres ir a buscar?"
         "Puede que tengas razón, vayamos a la Playa":
-            #block of code to run
             jump lugar_mal
         "¿Qué tal si mejor vamos a la piscina?":
-            #block of code to run
             jump lugar_bien
         
