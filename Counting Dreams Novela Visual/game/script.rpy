@@ -206,21 +206,20 @@ label start:
                         jump hora
 
     label segunda_pista:
-        if pista<=1:
-            prota "Ahora, ¿Qué buscamos?"
+        if pista==2:
             annie "Vas muy bien, sigamos así"
         elif pista<2:
             annie "Vaya, no pudimos encontrar nada, pasemos a otro acertijo."
         if (decision2=="lugar" and decision1=='hora') or (decision1=="lugar" and decision2=='hora'):
                 menu:
-                    annie"Tenemos estas opciones"
+                    annie"Tenemos esta opción"
                     "Contraseña☳":
                         $ decision3= "contraseña"
                         $ decisiones+=1
                         jump contraseña
         elif (decision2=="lugar" and decision1=='contraseña') or (decision1=="lugar" and decision2=='contraseña'):
                 menu:
-                    annie"tenemos estas opciones"
+                    annie"Tenemos esta opción"
                     "Hora[ℎ]":
                         $ decision3= "hora"
                         $ decisiones+=1
@@ -228,22 +227,89 @@ label start:
 
         elif (decision2=="hora" and decision1=='contraseña') or (decision1=="hora" and decision2=='contraseña'):
                 menu:
-                    annie"Tenemos estas opciones"
+                    annie"Tenemos esta opción"
                     "❃Lugar❃":
                         $ decision3= "lugar"
                         $ decisiones+=1
                         jump lugar
     label tercera_pista:
-        if pista<=1:
-            prota "Ahora, ¿Qué buscamos?"
-            annie "Vas muy bien, sigamos así"
-        elif pista<2:
-            annie "Vaya, no pudimos encontrar nada, pasemos a otro acertijo."
-
-            
-            
-            
-    'holi 7u7r'
+        prota "Ya hemos revisado todo"
+        annie "Veamos que podemos hacer con lo que tenemos"
+        if pista==3:
+            annie "Genial, lo tenemos todo"
+            prota "¡Sí!, lo logramos, fue bastante entretenido"
+            annie "Me divertí mucho, gracias por acompañarme"
+            prota "Bueno, a usar nuestras pistas, vamos a la fiesta"
+            annie "Claro, vamos en camino"
+        elif pista==2:
+            show annie sad_mal with dissolve
+            annie "Vaya, parece que no tenemos más tiempo para buscar más pistas"
+        elif pista<=1:
+            prota "Vaya, nos fue bastante mal"
+            annie "Si..."
+            prota "Quiza deberiamos haber buscado en otros lugares"
+            annie "Que mal, no pude sacar a luz mis habilidades de detective"
+            prota "Oye Annie, no te preocupes tanto por eso"
+            prota "Puede que no podamos ir a la fiesta, pero recuerda que tenemos una serie pendiente"
+            annie "Oh ,cierto, estábamos en la mejor parte"
+            prota "¿Quién crees que sea el asesino?"
+            show annie pensativa with dissolve
+            annie " Así como está la historia ahora…y las pistas que han dejado en las escenas post créditos.., siento que puede ser…."
+            "A pesar de no poder ir a la fiesta, decides pasar la noche en casa de Annie, resolviendo crímenes de una serie de televisión"
+            "Puedes volver a jugar esta historia, para resolver el acertijo e ir a la fiesta"
+            "Suerte!"
+            return
+        #cambio de escena (donde, ni idea)
+        "Te diriges al Patio del Cañón, donde las pistas te dijeron que era el lugar indicado"
+        "A pesar de no ser tan tarde, está un poco oscuro"
+        "Se siente un poco vacío…"
+        annie "Ya estamos en el cañón y a la hora indicada"
+        prota "¿Dónde está el resto?"
+        "Te paseas un rato, pero no ves a nadie"
+        annie "Que raro, si esto es lo que indican las pistas"
+        "De repente, escuchas algo que no calza con la oscuridad a la lejanía"
+        "¿Es eso música?"
+        prota "Creo que estoy escuchando algo, iré a ver"
+        annie "Somos un equipo, voy contigo"
+        #cambio de escena¿
+        "Te acercas un poco más al sonido, parece venir de un salón"
+        annie "Parece que la fiesta está dentro, vamos , golpeemos a la puerta"
+        "Golpeas ligeramente la puerta"
+        "Sin mucho tiempo para esperar respuesta, alguien la abre lentamente"
+        #aca me falta un personaje?
+        #??? ¿Encontraron las pistas?
+        "No puedes distinguir totalmente, pero la silueta que se dibuja tras la puerta parece bastante alta"
+        prota "Si, como puedes ver, llegamos al lugar indicado y a la hora indicada"
+        "La puerta se abre un poco más y la figura es un poco más visible"
+        annie "Ah, es Cedrik, jelou"
+        #cedrick "oh, Annie, sabría que vendrías, no dejarías pasar una “investigación” como esta"
+        prota "¿De dónde se conocen?"
+        annie "Éramos grupo de laboratorio, hasta que nos cambiaron"
+        #cedrick "Sep, ojala te trate bien tu nuevo equipo, pero volviendo al tema, ¿Tienen la contraseña?"
+        prota "Claro, claro"
+        annie "La contraseña es “Prestigio”"
+        #cedrick "Excelente trabajo, entren y disfruten de los frutos de su búsqueda"
+        #escena de un salon/disco
+        "Entras con Annie al salón, hay un ambiente bastante motivador"
+        "La música te lleva a dimensiones que ni sabias que existían"
+        "Las horas pasan volando, y bailaste cada segundo que pusiste"
+        "El ambiente ya se esta tranquilizando"
+        annie "Wow, esto fue muy entretenido"
+        prota "Seh, sirvió harto para relajarnos de los certámenes"
+        annie "Ojala hicieran esto de buscar pistas mas seguido"
+        prota "No creo que todos tengan nuestro tiempo"
+        annie "Cierto, en todo caso, ya como que es la hora de largarnos"
+        "Revisas tu celular, tiene poca batería y es casi de madrugada"
+        prota "Cierto, retirémonos por ahora"
+        "Sales del salón con Annie y ambos parten una caminata hacia sus hogares"
+        #escena calle de noche
+        "La noche esta tranquila y tienes una conversación placentera con Annie"
+        "Al momento de separar caminos, Annie se despide con un beso en la mejilla"
+        #escena de una habitacion
+        "Al llegar a casa, vas derechito a tu cama"
+        prota "Fue un gran día"
+        "The End"
+        return
     # This ends the game.
 
     return
