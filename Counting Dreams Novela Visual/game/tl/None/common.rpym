@@ -427,7 +427,7 @@ translate None strings:
 
     # renpy/common/00gui.rpy:377
     old "Loading will lose unsaved progress.\nAre you sure you want to do this?"
-    new "Loading will lose unsaved progress.\nAre you sure you want to do this?"
+    new "Cargar la partida podrá borrar el progreso sin guardar.\n¿Estás seguro que hacer esto?"
 
     # renpy/common/00gui.rpy:378
     old "Are you sure you want to quit?"
@@ -435,7 +435,7 @@ translate None strings:
 
     # renpy/common/00gui.rpy:379
     old "Are you sure you want to return to the main menu?\nThis will lose unsaved progress."
-    new "Are you sure you want to return to the main menu?\nThis will lose unsaved progress."
+    new "¿Estás seguro de que quieres regresar al Menú?\nEsto borrará el progreso sin guardar."
 
     # renpy/common/00gui.rpy:380
     old "Are you sure you want to end the replay?"

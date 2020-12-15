@@ -82,6 +82,7 @@ define gui.notify_text_size = 16
 define gui.title_text_size = 50
 
 
+
 ## Main and Game Menus #########################################################
 
 ## The images used for the main and game menus.
