@@ -61,6 +61,7 @@ label start:
     $ items=[]
     $ showitems= False
     scene inicio
+    #no deberiamos borrar esto?
     menu:
         "Tay en modo dev?"
         "Yes pues":
