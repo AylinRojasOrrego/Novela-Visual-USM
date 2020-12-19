@@ -141,13 +141,4 @@ label hora_bien:
                 show annie sad_mal
                 annie "Ya no queda más que investigar"
                 jump tercera_pista
-        
-
-
-
-
-
-            
-            
-
 return

@@ -415,15 +415,15 @@ translate None strings:
 
     # renpy/common/00gui.rpy:374
     old "Are you sure?"
-    new "Are you sure?"
+    new "¿Estás seguro?"
 
     # renpy/common/00gui.rpy:375
     old "Are you sure you want to delete this save?"
-    new "Are you sure you want to delete this save?"
+    new "¿Estás seguro de que quieres borrar ese guardado?"
 
     # renpy/common/00gui.rpy:376
     old "Are you sure you want to overwrite your save?"
-    new "Are you sure you want to overwrite your save?"
+    new "¿Estás seguro de sobreescribir la partida?"
 
     # renpy/common/00gui.rpy:377
     old "Loading will lose unsaved progress.\nAre you sure you want to do this?"
@@ -431,7 +431,7 @@ translate None strings:
 
     # renpy/common/00gui.rpy:378
     old "Are you sure you want to quit?"
-    new "Are you sure you want to quit?"
+    new "¿Estás seguro de quieres salir?"
 
     # renpy/common/00gui.rpy:379
     old "Are you sure you want to return to the main menu?\nThis will lose unsaved progress."
