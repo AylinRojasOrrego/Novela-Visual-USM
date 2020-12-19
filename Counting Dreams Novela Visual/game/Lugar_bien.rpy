@@ -36,7 +36,6 @@ label lugar_bien:
     show annie normal with dissolve
     annie "Decia 'Patio el Cañón', bastante autoexplicatorio"
 
-    hide Lugar with dissolve
 
     prota "Buena, tenemos una respuesta"
     show annie muyfeliz with dissolve

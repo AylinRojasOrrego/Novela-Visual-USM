@@ -1,6 +1,4 @@
-image annie_sad_mal="Annie_Act1_01_Sad.png"
-image annie_normal="Annie_Act1_01.png"
-image annie happy_bien="Annie_Act1_02.png"
+
 label contraseña:
     "Decides buscar la contraseña para entrar a la fiesta"
     prota "¿En qué parte buscamos?"
@@ -18,6 +16,7 @@ label contraseña:
     annie "Quiero creer que es por algún bar cercano"
     prota "Podría ser el patio del Cañón"
     menu Desición_contraseña:
+        show annie pensativa with dissolve
         annie '¿En dónde deberíamos buscar?'
         'Dirijámonos al Cañon':
             jump contraseña_bien

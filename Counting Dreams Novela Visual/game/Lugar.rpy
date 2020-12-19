@@ -2,8 +2,10 @@ label lugar:
     #"Aquí comienza la escena de lugar"
     "Con Annie decides ir en búsqueda del lugar de la fiesta"
     prota "¿Por dónde empezamos?"
+    show annie happy_bien with dissolve
     annie "Mejor veamos la publicación de nuevo"
     prota "¿Crees que habrán pistas ahí?"
+    show annie normal with dissovle
     annie "No creo que nos dejen sin pista alguna"
     show annie phone with dissolve#:
         #xzoom 0.40 yzoom 0.40
@@ -16,10 +18,10 @@ label lugar:
 
     show annie happy_bien with dissolve
     prota "Ah, un poema, ¿A qué se referirá?"
-    show annie pensativa
+    show annie pensativa with dissolve
     annie "Bueno, creo que se puede referir a la playa"
     prota "Hmm, yo estaba pensando en la piscina de la universidad"
-    show annie happy_bien
+    show annie happy_bien with dissolve
     annie "Bueno, tu escoges ahora, ¿Dónde quieres ir a buscar?"
     menu Decision_lugar:
         annie "Bueno, tu escoges ahora, ¿Dónde quieres ir a buscar?"

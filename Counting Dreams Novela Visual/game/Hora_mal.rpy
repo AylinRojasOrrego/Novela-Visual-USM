@@ -19,6 +19,7 @@ label hora_mal:
         xpos 400 ypos 100
     annie "¿Cómo te fue [MiNombre], encontraste algo?"
     prota "Nop, tuve mala suerte, ¿tu?"
+    show annie muymal with dissolve
     annie "Nada tampoco,parece que no fue buena idea venir a buscar a la plaza"
     prota "Seh…"
     if decisiones==1:
