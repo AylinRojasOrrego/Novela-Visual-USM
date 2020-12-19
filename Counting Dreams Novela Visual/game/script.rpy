@@ -61,15 +61,6 @@ label start:
     $ items=[]
     $ showitems= False
     scene inicio
-    #no deberiamos borrar esto?
-    menu:
-        "Tay en modo dev?"
-        "Yes pues":
-            "Warning que esto te disablea un par de cosas"
-            $ dev= True
-        "no pue, que es eso del modo dev, aiuda mama, no sé programar":
-            "wenu, continua normal" 
-            $ dev= False   
     
     "Bienvenid@ a Una fiesta entre pistas"
     "Antes de comenzar con la historia, debemos hacerte unas preguntas..."
@@ -88,9 +79,6 @@ label start:
     "Muy bien [MiNombre], comencemos con esta aventura"
 
     scene biblioteca
-
-    if dev:
-        jump modo_dev
     prota "Ha sido una semana difícil, pero he logrado pasar mis certámenes"
     prota "Quizá deba tomarme un descanso, ir a caminar o…"
     prota "Ah mira, ahí viene Annie, ¿le habrá ido bien en su presentación?"
@@ -260,7 +248,7 @@ label start:
             "Puedes volver a jugar esta historia, para resolver el acertijo e ir a la fiesta"
             "Suerte!"
             return
-        #cambio de escena (donde, ni idea)
+        #cambio de escena (donde, ni idea) la plaza con el cielo mas oscuro?
         "Te diriges al Patio del Cañón, donde las pistas te dijeron que era el lugar indicado"
         "A pesar de no ser tan tarde, está un poco oscuro"
         "Se siente un poco vacío…"
@@ -272,12 +260,12 @@ label start:
         "¿Es eso música?"
         prota "Creo que estoy escuchando algo, iré a ver"
         annie "Somos un equipo, voy contigo"
-        #cambio de escena¿
+        #cambio de escena¿ (se acercan al salon)
         "Te acercas un poco más al sonido, parece venir de un salón"
         annie "Parece que la fiesta está dentro, vamos , golpeemos a la puerta"
         "Golpeas ligeramente la puerta"
         "Sin mucho tiempo para esperar respuesta, alguien la abre lentamente"
-        #aca me falta un personaje?
+        #aca me falta un personaje? aiuda mama que toy a 1 pixel de llorar
         #??? ¿Encontraron las pistas?
         "No puedes distinguir totalmente, pero la silueta que se dibuja tras la puerta parece bastante alta"
         prota "Si, como puedes ver, llegamos al lugar indicado y a la hora indicada"

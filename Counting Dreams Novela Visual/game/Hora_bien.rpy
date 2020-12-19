@@ -1,4 +1,6 @@
-
+image side annie normal = im.Scale('Annie_Act1_01.png', 540, 910, xoffset=-130, yoffset=600)
+image side annie triste = im.Scale('Annie_Act1_01_Sad.png', 540, 910, xoffset=-130, yoffset=600)
+image side annie feliz = im.Scale('Annie_Act1_02.png', 540, 910, xoffset=-130, yoffset=600)
 label hora_bien:
     #"aqui comienza la escena de la hora_bien"
     annie '¿Qué esperamos entonces? En marcha'
@@ -137,13 +139,4 @@ label hora_bien:
                 show annie sad_mal
                 annie "Ya no queda más que investigar"
                 jump tercera_pista
-        
-
-
-
-
-
-            
-            
-
 return
