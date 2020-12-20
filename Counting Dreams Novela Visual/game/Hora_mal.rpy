@@ -7,7 +7,7 @@ label hora_mal:
     show annie normal with easeinright:
         xzoom 0.40 yzoom 0.40
         xpos 400 ypos 100
-    prota "no hay mucho a quien preguntar, separémonos en busca de algún papel pegado con información"
+    prota "No hay mucho a quien preguntar, separémonos en busca de algún papel pegado con información"
     annie "Detective Annie en camino"
     hide annie with easeoutright
     "Te separas de Annie, en busca de alguna pista que te ayude a entrar a la fiesta."

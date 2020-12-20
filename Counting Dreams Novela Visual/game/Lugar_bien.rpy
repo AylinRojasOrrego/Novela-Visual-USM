@@ -40,10 +40,10 @@ label lugar_bien:
     prota "Buena, tenemos una respuesta"
     show annie muyfeliz with dissolve
     if decisiones==1:
-        annie "nos quedan 2 cosas por buscar"
+        annie "Nos quedan 2 cosas por buscar"
         jump primera_pista
     elif decisiones==2:
-        annie "nos queda 1 pista por encontar"
+        annie "Nos queda 1 pista por encontar"
         jump segunda_pista
     elif decisiones==3:
         annie "No hay nada mas por buscar"

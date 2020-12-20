@@ -1,5 +1,4 @@
 label hora:
-    #"aqui comienza la escena de la hora"
     prota '¿Por donde empezamos?'
     show annie happy_bien with dissolve
     annie 'Revisemos una publicación una vez más'
