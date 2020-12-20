@@ -52,6 +52,7 @@ image plaza='Hora_plaza.png'
 image calle="Terraza.png"
 image canon='cañon.png'
 image avenida='avenida.png'
+image canon2= "cañon2.png"
 
 $ desicion1= ''
 $ desicion2= ''
