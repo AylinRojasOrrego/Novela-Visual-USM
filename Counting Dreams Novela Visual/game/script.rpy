@@ -50,6 +50,7 @@ image cancha_bancas='Cancha_bancas.png'
 image cancha_gradas='Cancha_gradas.png'
 image plaza='Hora_plaza.png'
 image calle="Terraza.png"
+image canon='cañon.png'
 
 $ desicion1= ''
 $ desicion2= ''
@@ -130,12 +131,8 @@ label start:
 
     show annie normal with dissolve
     annie "No se, escoge tú."
-
-    label modo_dev:
-        if dev:
-            show annie normal with dissolve
                 
-        
+
     menu: 
         "❃Lugar❃":
             $ decision1= "lugar"

@@ -15,8 +15,8 @@ label contraseña:
     prota "¿Dónde será?"
     annie "Quiero creer que es por algún bar cercano"
     prota "Podría ser el patio del Cañón"
+    show annie pensativa with dissolve
     menu Desición_contraseña:
-        show annie pensativa with dissolve
         annie '¿En dónde deberíamos buscar?'
         'Dirijámonos al Cañon':
             jump contraseña_bien

@@ -17,7 +17,7 @@ label hora:
 
     show annie happy_bien with dissolve
     prota 'Ah, una rima, ¿A qué se referirá?'
-    show annie_pensativa with dissolve
+    show annie pensativa with dissolve
     annie 'Quizá se refiere a la cancha'
     prota 'Yo estaba pensando en alguna plaza cercana'
     show annie happy_bien with dissolve
