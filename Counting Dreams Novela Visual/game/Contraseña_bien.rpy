@@ -1,5 +1,6 @@
 image annie muymal = 'Annie_Act1_02_Mala Desicion.png'
 image annie sad_mal="Annie_Act1_01_Sad.png"
+image side annie= im.Scale('Nada.png', 0, 0, xoffset=-130, yoffset=600)
 label contraseña_bien:
     "Decides Ir al cañón con Annie"
     scene canon with fade
@@ -63,7 +64,7 @@ label contraseña_bien:
     "Annie parece estar saltando de la emoción"
     "Tomas el papel y lo abres"
     show annie muyfeliz with dissolve
-    annie "¿Ah sí?, a ver, quiero verlo"
+    annie '¿Ah sí?, a ver, quiero verlo'
     "“Felicidades por encontrar esto, tu recompensa es la contraseña para la fiesta“"
     "Antes de llevarte el papel al bolsillo, lees:"
     "“Por favor deja el papel en el mismo lugar, para que otros aventureros como tú lo puedan encontrar“"

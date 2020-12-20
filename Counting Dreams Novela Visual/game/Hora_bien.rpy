@@ -1,7 +1,7 @@
 image side annie ok = im.Scale('Annie_Act1_01.png', 540, 910, xoffset=-130, yoffset=600)
 image side annie triste = im.Scale('Annie_Act1_01_Sad.png', 540, 910, xoffset=-130, yoffset=600)
 image side annie feliz = im.Scale('Annie_Act1_02.png', 540, 910, xoffset=-130, yoffset=600)
-image side annie = im.Scale('Annie_Act1_02.png', 0, 0, xoffset=-130, yoffset=600)
+image side annie = im.Scale('Nada.png', 0, 0, xoffset=-130, yoffset=600)
 
 label hora_bien:
     #"aqui comienza la escena de la hora_bien"

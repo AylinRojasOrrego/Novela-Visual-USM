@@ -30,6 +30,14 @@ image kylie mirando='Kylie_ActHora_Mirando.png'
 image kylie riendo='Kylie_ActHora_Riendo.png'
 image kylie negando='Kylie_ActHora_Negando.png'
 
+define nadie = Character("????", color="A41923",image='????')
+define cedric = Character("Cedric", color="A41923",image='cedric')
+image cedric serio='Cedric_ActFinal_Enojado.png'
+image cedric normal='Cedric_ActFinal_Feliz.png'
+image cedric escuchando='Cedric_ActFinal_Escuchando.png'
+image cedric escuchandofeliz= 'Cedric_ActFinal_Contraseña Correcta.png' 
+image cedric feliz= 'Cedric_ActFinal_Like.png'
+
 image confesion="confesion.jpg"
 
 image Hora='Hora.png'
@@ -53,6 +61,9 @@ image calle="Terraza.png"
 image canon='cañon.png'
 image avenida='avenida.png'
 image canon2= "cañon2.png"
+image canonfiesta='cañon_noche.png'
+image fiesta= 'fiesta.png'
+image final= 'AvenidaEspaña.png'
 
 $ desicion1= ''
 $ desicion2= ''
@@ -236,11 +247,15 @@ label start:
         prota "Ya hemos revisado todo"
         annie "Veamos que podemos hacer con lo que tenemos"
         if pista==3:
+            show annie muyfeliz with dissolve
             annie "Genial, lo tenemos todo"
             prota "¡Sí!, lo logramos, fue bastante entretenido"
+            show annie happy_bien with dissolve
             annie "Me divertí mucho, gracias por acompañarme"
             prota "Bueno, a usar nuestras pistas, vamos a la fiesta"
             annie "Claro, vamos en camino"
+            hide annie with easeoutright
+            jump GoodEnding
         elif pista==2:
             show annie sad_mal with dissolve
             annie "Vaya, parece que no tenemos más tiempo para buscar más pistas"
@@ -317,7 +332,7 @@ label start:
             annie "Oh ,cierto, estábamos en la mejor parte"
             prota "¿Quién crees que sea el asesino?"
             show annie pensativa with dissolve
-            annie " Así como está la historia ahora…y las pistas que han dejado en las escenas post créditos.., siento que puede ser…."
+            annie " Así como está la historia ahora...y las pistas que han dejado en las escenas post créditos.., siento que puede ser..."
             "A pesar de no poder ir a la fiesta, decides pasar la noche en casa de Annie, resolviendo crímenes de una serie de televisión"
             "Puedes volver a jugar esta historia, para resolver el acertijo e ir a la fiesta"
             "Suerte!"

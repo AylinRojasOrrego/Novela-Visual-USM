@@ -36,12 +36,13 @@ label lugar_bien:
 
     show annie normal with dissolve
     annie "Decia 'Patio el Cañón', bastante autoexplicatorio"
+    hide Lugar with dissolve
 
 
     prota "Buena, tenemos una respuesta"
     show annie muyfeliz with dissolve
     if decisiones==1:
-        annie "Nos quedan 2 cosas por buscar"
+        annie 'Nos quedan 2 cosas por buscar'
         jump primera_pista
     elif decisiones==2:
         annie "Nos queda 1 pista por encontar"
