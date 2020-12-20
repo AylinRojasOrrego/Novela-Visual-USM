@@ -1,5 +1,6 @@
 
 label lugar_bien:
+    $ lugar= 'si'
     annie "La piscina ¿eh?, si le encuentro un poco de sentido vamos"
     "Vas con Annie a la piscina de la universidad en busca de pistas."
     scene piscina with fade

@@ -5,7 +5,7 @@ label lugar:
     show annie happy_bien with dissolve
     annie "Mejor veamos la publicación de nuevo"
     prota "¿Crees que habrán pistas ahí?"
-    show annie normal with dissovle
+    show annie normal with dissolve
     annie "No creo que nos dejen sin pista alguna"
     show annie phone with dissolve#:
         #xzoom 0.40 yzoom 0.40

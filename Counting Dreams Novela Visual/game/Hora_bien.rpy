@@ -33,6 +33,7 @@ label hora_bien:
 
         'Al de las gradas':
             'Vas con Annie a hablar con el chico de las flexiones'
+            $ hora= 'si'
             scene cancha_gradas with fade
             show derek flexiones with dissolve:
                 xzoom 0.40 yzoom 0.40

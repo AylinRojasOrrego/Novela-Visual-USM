@@ -1,6 +1,6 @@
 
 label lugar_mal:
-    $Lugar=False
+    $ lugar= 'no'
 
     "Decides ir a la playa con Annie en busca de pistas para resolver el acertijo" 
     hide annie happy_bien with dissolve
