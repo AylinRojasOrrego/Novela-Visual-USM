@@ -1,6 +1,8 @@
 image annie muymal = 'Annie_Act1_02_Mala Desicion.png'
 image annie sad_mal="Annie_Act1_01_Sad.png"
 label contraseña_mal:
+    $Contraseña=False
+
     "Decides con Annie ir a unos bares no tan lejos de la universidad"
     #escena de una calle (no la he buscado todavia, no se enojen TwT)
     #encontre una, pero ta mala la resolucion, y no me gusta del todo como escena, era pa que no 

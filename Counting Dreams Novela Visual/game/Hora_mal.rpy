@@ -1,4 +1,5 @@
 label hora_mal:
+    $Hora=False
 
     "Decides ir a una plaza cerca de la universidad con Annie en busca de pistas"
     annie "Vamos entonces"

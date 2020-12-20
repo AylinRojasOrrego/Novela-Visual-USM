@@ -34,7 +34,7 @@ image confesion="confesion.jpg"
 
 image Hora='Hora.png'
 image Lugar='Lugar.png'
-image Contraseña='Contraseña.png'
+image Pass='Contraseña.png'
 
 define PistaHora ='Nada.png'
 define PistaLugar ='Nada.png'
@@ -51,11 +51,19 @@ image cancha_gradas='Cancha_gradas.png'
 image plaza='Hora_plaza.png'
 image calle="Terraza.png"
 image canon='cañon.png'
+image avenida=''
 
 $ desicion1= ''
 $ desicion2= ''
 $ desicion3= ''  
 $ MiNombre= ''
+
+#  Desiciones erradas
+$Hora=True
+$Lugar=True
+$Contraseña=True
+
+
 # The game starts here.
 
 label start:
@@ -230,6 +238,56 @@ label start:
         elif pista==2:
             show annie sad_mal with dissolve
             annie "Vaya, parece que no tenemos más tiempo para buscar más pistas"
+            'En conjunto van a la entrada de la Universidad'
+            scene avenida with fade
+            show annie sad_mal with easeinright:
+                xzoom 0.50 yzoom 0.50
+                xpos 700 ypos 150
+            protA '¿Crees que lo lograremos con lo que tenemos?'
+            show annie pensativa with dissolve
+            annie 'Hmm, estaba pensando la última'
+            annie 'Cuando nos separamos pude encontrar la que nos faltaba'
+            show annie happy_bien with dissolve
+            annie 'Aquí la tengo'
+
+            if Hora==False:
+                show Hora:
+                    align (0.2 , 0.2)
+                with dissolve
+
+                $PistaHora = 'Hora.png'
+                $pista+=1
+
+                prota '¡Que lista eres Annie!'
+                show annie muyfeliz with dissolve
+                annie 'No es nada [MiNombre], detective Annie al rescate'
+                prota 'Bueno detective, tenemos una fiesta a la que atender'
+                jump GoodEnding
+
+
+            elif Lugar==False:
+                show Lugar:
+                    align (0.2 , 0.2)
+                with dissolve
+
+                $PistaLugar = 'Lugar.png'
+                $pista+=1
+
+                prota '¡Que lista eres Annie!'
+                show annie muyfeliz with dissolve
+                annie 'No es nada [MiNombre], detective Annie al rescate'
+                prota 'Bueno detective, tenemos una fiesta a la que atender'
+                jump GoodEnding
+
+            elif Contraseña==False:
+                show Pass:
+                    align (0.2 , 0.2)
+                with dissolve
+
+                $PistaLugar = 'Contraseña.png'
+                $pista+=1
+
+
         elif pista<=1:
             prota "Vaya, nos fue bastante mal"
             annie "Si..."

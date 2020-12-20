@@ -59,8 +59,6 @@ label hora_bien:
                 align (0.2 , 0.2)
             with dissolve
 
-            $hr ='22:30[hrs]'
-
             $PistaHora = 'Hora.png'
 
             $pista+=1
