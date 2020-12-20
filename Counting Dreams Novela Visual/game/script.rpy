@@ -38,7 +38,7 @@ image Pass='Contraseña.png'
 
 define PistaHora ='Nada.png'
 define PistaLugar ='Nada.png'
-define PistaContraseña ='Nada.png'
+define PistaPassw ='Nada.png'
 
 image biblioteca="Stage_01.png"
 image inicio= "inicio1.png"
@@ -51,7 +51,7 @@ image cancha_gradas='Cancha_gradas.png'
 image plaza='Hora_plaza.png'
 image calle="Terraza.png"
 image canon='cañon.png'
-image avenida=''
+image avenida='avenida.png'
 
 $ desicion1= ''
 $ desicion2= ''
@@ -59,9 +59,9 @@ $ desicion3= ''
 $ MiNombre= ''
 
 #  Desiciones erradas
-$Hora=True
-$Lugar=True
-$Contraseña=True
+$ hora= ''
+$ lugar= ''
+$ passw= ''
 
 
 # The game starts here.
@@ -227,6 +227,11 @@ label start:
                         $ decisiones+=1
                         jump lugar
     label tercera_pista:
+        'En conjunto van a la entrada de la Universidad'
+        scene avenida with fade
+        show annie normal with dissolve:
+            xzoom 0.50 yzoom 0.50
+            xpos 700 ypos 150
         prota "Ya hemos revisado todo"
         annie "Veamos que podemos hacer con lo que tenemos"
         if pista==3:
@@ -238,19 +243,15 @@ label start:
         elif pista==2:
             show annie sad_mal with dissolve
             annie "Vaya, parece que no tenemos más tiempo para buscar más pistas"
-            'En conjunto van a la entrada de la Universidad'
-            scene avenida with fade
-            show annie sad_mal with easeinright:
-                xzoom 0.50 yzoom 0.50
-                xpos 700 ypos 150
-            protA '¿Crees que lo lograremos con lo que tenemos?'
+            prota '¿Crees que lo lograremos con lo que tenemos?'
             show annie pensativa with dissolve
             annie 'Hmm, estaba pensando la última'
             annie 'Cuando nos separamos pude encontrar la que nos faltaba'
             show annie happy_bien with dissolve
             annie 'Aquí la tengo'
 
-            if Hora==False:
+
+            if hora=="no":
                 show Hora:
                     align (0.2 , 0.2)
                 with dissolve
@@ -259,13 +260,14 @@ label start:
                 $pista+=1
 
                 prota '¡Que lista eres Annie!'
+                hide Hora with dissolve
                 show annie muyfeliz with dissolve
                 annie 'No es nada [MiNombre], detective Annie al rescate'
                 prota 'Bueno detective, tenemos una fiesta a la que atender'
                 jump GoodEnding
 
 
-            elif Lugar==False:
+            elif lugar=='no':
                 show Lugar:
                     align (0.2 , 0.2)
                 with dissolve
@@ -274,17 +276,19 @@ label start:
                 $pista+=1
 
                 prota '¡Que lista eres Annie!'
+                hide Lugar with dissolve
                 show annie muyfeliz with dissolve
                 annie 'No es nada [MiNombre], detective Annie al rescate'
                 prota 'Bueno detective, tenemos una fiesta a la que atender'
                 jump GoodEnding
 
-            elif Contraseña==False:
+
+            elif passw=='no':
                 show Pass:
                     align (0.2 , 0.2)
                 with dissolve
 
-                $PistaLugar = 'Contraseña.png'
+                $PistaPassw = 'Contraseña.png'
                 $pista+=1
                 prota '¡Que lista eres Annie!'
                 show annie muyfeliz with dissolve
@@ -293,6 +297,14 @@ label start:
                 jump GoodEnding
                 
 
+                prota '¡Que lista eres Annie!'
+                hide pass with dissolve
+                show annie muyfeliz with dissolve
+                annie 'No es nada [MiNombre], detective Annie al rescate'
+                prota 'Bueno detective, tenemos una fiesta a la que atender'
+                jump GoodEnding
+
+            
 
         elif pista<=1:
             prota "Vaya, nos fue bastante mal"
