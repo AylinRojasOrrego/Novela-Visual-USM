@@ -1,0 +1,52 @@
+label GoodEnding:
+    #cambio de escena (donde, ni idea) la plaza con el cielo mas oscuro?
+        "Te diriges al Patio del Cañón, donde las pistas te dijeron que era el lugar indicado"
+        "A pesar de no ser tan tarde, está un poco oscuro"
+        "Se siente un poco vacío…"
+        annie "Ya estamos en el cañón y a la hora indicada"
+        prota "¿Dónde está el resto?"
+        "Te paseas un rato, pero no ves a nadie"
+        annie "Que raro, si esto es lo que indican las pistas"
+        "De repente, escuchas algo que no calza con la oscuridad a la lejanía"
+        "¿Es eso música?"
+        prota "Creo que estoy escuchando algo, iré a ver"
+        annie "Somos un equipo, voy contigo"
+        #cambio de escena¿ (se acercan al salon)
+        "Te acercas un poco más al sonido, parece venir de un salón"
+        annie "Parece que la fiesta está dentro, vamos , golpeemos a la puerta"
+        "Golpeas ligeramente la puerta"
+        "Sin mucho tiempo para esperar respuesta, alguien la abre lentamente"
+        #aca me falta un personaje? aiuda mama que toy a 1 pixel de llorar
+        #??? ¿Encontraron las pistas?
+        "No puedes distinguir totalmente, pero la silueta que se dibuja tras la puerta parece bastante alta"
+        prota "Si, como puedes ver, llegamos al lugar indicado y a la hora indicada"
+        "La puerta se abre un poco más y la figura es un poco más visible"
+        annie "Ah, es Cedrik, jelou"
+        #cedrick "oh, Annie, sabría que vendrías, no dejarías pasar una “investigación” como esta"
+        prota "¿De dónde se conocen?"
+        annie "Éramos grupo de laboratorio, hasta que nos cambiaron"
+        #cedrick "Sep, ojala te trate bien tu nuevo equipo, pero volviendo al tema, ¿Tienen la contraseña?"
+        prota "Claro, claro"
+        annie "La contraseña es “Prestigio”"
+        #cedrick "Excelente trabajo, entren y disfruten de los frutos de su búsqueda"
+        #escena de un salon/disco
+        "Entras con Annie al salón, hay un ambiente bastante motivador"
+        "La música te lleva a dimensiones que ni sabias que existían"
+        "Las horas pasan volando, y bailaste cada segundo que pusiste"
+        "El ambiente ya se esta tranquilizando"
+        annie "Wow, esto fue muy entretenido"
+        prota "Seh, sirvió harto para relajarnos de los certámenes"
+        annie "Ojala hicieran esto de buscar pistas mas seguido"
+        prota "No creo que todos tengan nuestro tiempo"
+        annie "Cierto, en todo caso, ya como que es la hora de largarnos"
+        "Revisas tu celular, tiene poca batería y es casi de madrugada"
+        prota "Cierto, retirémonos por ahora"
+        "Sales del salón con Annie y ambos parten una caminata hacia sus hogares"
+        #escena calle de noche
+        "La noche esta tranquila y tienes una conversación placentera con Annie"
+        "Al momento de separar caminos, Annie se despide con un beso en la mejilla"
+        #escena de una habitacion
+        "Al llegar a casa, vas derechito a tu cama"
+        prota "Fue un gran día"
+        "The End"
+        return
