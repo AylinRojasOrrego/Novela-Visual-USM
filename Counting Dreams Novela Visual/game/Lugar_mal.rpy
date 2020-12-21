@@ -1,18 +1,22 @@
 
 label lugar_mal:
     $ lugar= 'no'
-
+    play music "Music-aventura.m4a"
     "Decides ir a la playa con Annie en busca de pistas para resolver el acertijo" 
     hide annie happy_bien with dissolve
     #cambio de escena a una playa
     scene playa with fade
+    play sound "oceano.mp3"
     show annie normal with dissolve:
         xzoom 0.40 yzoom 0.40
         xpos 500 ypos 100
     "El viento sopla gentilmente y la temperatura esta agradable"
     "Sientes ganas de quedarte acá un rato, pero Annie te mira"
     show annie sad_mal with dissolve
-    annie "Oye [MiNombre] te quedaste pegado viendo la nada, así no vamos a encontrar la pista"
+    if genero == "Chico": 
+        annie "Oye [MiNombre] te quedaste pegado viendo la nada, así no vamos a encontrar la pista"
+    elif genero == "Chica":
+        annie "Oye [MiNombre] te quedaste pegada viendo la nada, así no vamos a encontrar la pista"
     prota "Oh, perdona, es que el ambiente es tranquilizador"
     show annie normal with dissolve
     annie "Tienes razón pero vinimos en busca de algo"
@@ -23,7 +27,10 @@ label lugar_mal:
     show annie sad_mal with easeinright:
         xzoom 0.40 yzoom 0.40
         xpos 500 ypos 100
-    prota "Quede un poco cansado de eso"
+    if genero == "Chico":
+        prota "Quede un poco cansado de eso"
+    elif genero == "Chica":
+        prota "Quede un poco cansada de eso"
     show annie muymal with dissolve
     annie "Seh, yo también, lo peor es que no conseguimos ni una sola pista"
     prota "Parece la playa no era la respuesta a ese acertijo, ¿Lo intentamos resolver de nuevo?"
@@ -36,10 +43,13 @@ label lugar_mal:
     
     if decisiones==1:
         annie "Bueno... nos quedan 2 cosas por buscar"
+        stop sound 5.0
         jump primera_pista
     elif decisiones==2:
         annie "Bueno... nos queda 1 pista por encontar"
+        stop sound 5.0
         jump segunda_pista
     elif decisiones==3:
-        annie "Rayos... no hay nada mas por investigar"
+        annie "Rayos... no hay nada mas por investigar" 
+        stop sound 5.0  
         jump tercera_pista

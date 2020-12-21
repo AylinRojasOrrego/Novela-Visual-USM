@@ -15,7 +15,7 @@ label contraseña_mal:
     "Perfecto para buscar pistas"
     show annie happy_bien with dissolve
     annie "¿Qué te parece si nos separamos para buscar las pistas?"
-    prota "Buena Idea"
+    prota "Buena idea"
     hide annie with easeoutright
     "Luego de cruzar la calle, empiezas a revisar los locales cercanos"
     "Entras a un par de ellos a preguntar, pero nadie sabe nada"

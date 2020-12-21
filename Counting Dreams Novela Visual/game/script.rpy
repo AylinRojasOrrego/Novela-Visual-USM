@@ -82,7 +82,7 @@ label start:
     $ items=[]
     $ showitems= False
     scene inicio
-    
+    play music "Music-start.m4a"
     "Bienvenid@ a Una fiesta entre pistas"
     "Antes de comenzar con la historia, debemos hacerte unas preguntas..."
     "¿Eres Chica o Chico?"
@@ -96,10 +96,10 @@ label start:
     "¿Cómo te llamas?"
     $ MiNombre = renpy.input(" ")
     prota "Me llamo [MiNombre]"
-    
     "Muy bien [MiNombre], comencemos con esta aventura"
-
+    stop music fadeout 3.0
     scene biblioteca
+    play sound "universidad.mp3"
     prota "Ha sido una semana difícil, pero he logrado pasar mis certámenes"
     prota "Quizá deba tomarme un descanso, ir a caminar o…"
     prota "Ah mira, ahí viene Annie, ¿le habrá ido bien en su presentación?"
