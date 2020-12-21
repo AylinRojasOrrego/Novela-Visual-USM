@@ -24,4 +24,4 @@ screen Inventario:
     #seccion izquierda
     add "[PistaHora]" xpos 0.02 ypos 0.075 xzoom 0.4 yzoom 0.4
     add "[PistaLugar]" xpos 0.141 ypos 0.075 xzoom 0.4 yzoom 0.4
-    add "[PistaContraseña]" xpos 0.27 ypos 0.075 xzoom 0.4 yzoom 0.4
+    add "[PistaPassw]" xpos 0.27 ypos 0.075 xzoom 0.4 yzoom 0.4

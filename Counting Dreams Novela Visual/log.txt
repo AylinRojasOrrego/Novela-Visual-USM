@@ -1,12 +1,17 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 Tue Dec 08 16:25:35 2020
 =======
 Thu Dec 10 19:30:30 2020
 >>>>>>> 59bb9d219e23e0f7ec53129f83062633d78d2cb1
+=======
+Sat Dec 19 23:01:01 2020
+>>>>>>> 8c7142ff7518b67c83bae4952c18a424094d8bf5
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
  
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 Bootstrap to the start of init.init took 0.07s
 Early init took 0.06s
@@ -56,14 +61,30 @@ Save bytecode. took 0.11s
 Running _start took 0.00s
 Performance test:
 Interface start took 0.03s
+=======
+Bootstrap to the start of init.init took 0.29s
+Early init took 0.01s
+Loader init took 0.28s
+Loading error handling took 0.10s
+Loading script took 3.11s
+Loading save slot metadata. took 0.05s
+Loading persistent took 0.00s
 
-primary display bounds: (0, 0, 1600, 900)
+File "game/script.rpy", line 64: invalid syntax
+    ContraseÃ±a=True
+             ^
+    
+DPI scale factor: 1.000000
+Interface start took 0.48s
+>>>>>>> 8c7142ff7518b67c83bae4952c18a424094d8bf5
+
+primary display bounds: (0, 0, 1920, 1080)
 swap interval: 1 frames
 Windowed mode.
-Screen sizes: virtual=(1280, 720) physical=(1184, 666) drawable=(1184, 666)
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
 Vendor: 'ATI Technologies Inc.'
-Renderer: 'AMD Radeon(TM) Vega 6 Graphics'
-Version: '4.6.13587 Compatibility Profile Context 19.40.42 26.20.14042.2'
+Renderer: 'AMD Radeon R5 Graphics'
+Version: '4.5.13467 Compatibility Profile Context 21.19.414.256'
 Display Info: None
 Fixed-function is blacklisted.
 Extensions:
@@ -76,8 +97,7 @@ Extensions:
     GL_AMD_framebuffer_sample_positions
     GL_AMD_gcn_shader
     GL_AMD_gpu_shader_half_float
-    GL_AMD_gpu_shader_half_float_fetch
-    GL_AMD_gpu_shader_int16
+    GL_AMD_gpu_shader_half_float2
     GL_AMD_gpu_shader_int64
     GL_AMD_interleaved_elements
     GL_AMD_multi_draw_indirect
@@ -147,7 +167,6 @@ Extensions:
     GL_ARB_geometry_shader4
     GL_ARB_get_program_binary
     GL_ARB_get_texture_sub_image
-    GL_ARB_gl_spirv
     GL_ARB_gpu_shader5
     GL_ARB_gpu_shader_fp64
     GL_ARB_half_float_pixel
@@ -166,12 +185,10 @@ Extensions:
     GL_ARB_multitexture
     GL_ARB_occlusion_query
     GL_ARB_occlusion_query2
-    GL_ARB_parallel_shader_compile
     GL_ARB_pipeline_statistics_query
     GL_ARB_pixel_buffer_object
     GL_ARB_point_parameters
     GL_ARB_point_sprite
-    GL_ARB_polygon_offset_clamp
     GL_ARB_program_interface_query
     GL_ARB_provoking_vertex
     GL_ARB_query_buffer_object
@@ -195,7 +212,6 @@ Extensions:
     GL_ARB_shader_subroutine
     GL_ARB_shader_texture_image_samples
     GL_ARB_shader_texture_lod
-    GL_ARB_shader_viewport_layer_array
     GL_ARB_shading_language_100
     GL_ARB_shading_language_420pack
     GL_ARB_shading_language_packing
@@ -203,7 +219,6 @@ Extensions:
     GL_ARB_shadow_ambient
     GL_ARB_sparse_buffer
     GL_ARB_sparse_texture
-    GL_ARB_spirv_extensions
     GL_ARB_stencil_texturing
     GL_ARB_sync
     GL_ARB_tessellation_shader
@@ -289,8 +304,6 @@ Extensions:
     GL_EXT_gpu_program_parameters
     GL_EXT_gpu_shader4
     GL_EXT_histogram
-    GL_EXT_memory_object
-    GL_EXT_memory_object_win32
     GL_EXT_multi_draw_arrays
     GL_EXT_packed_depth_stencil
     GL_EXT_packed_float
@@ -301,8 +314,6 @@ Extensions:
     GL_EXT_provoking_vertex
     GL_EXT_rescale_normal
     GL_EXT_secondary_color
-    GL_EXT_semaphore
-    GL_EXT_semaphore_win32
     GL_EXT_separate_specular_color
     GL_EXT_shader_image_load_store
     GL_EXT_shader_integer_mix
@@ -330,8 +341,6 @@ Extensions:
     GL_EXT_texture_object
     GL_EXT_texture_rectangle
     GL_EXT_texture_sRGB
-    GL_EXT_texture_sRGB_R8
-    GL_EXT_texture_sRGB_RG8
     GL_EXT_texture_sRGB_decode
     GL_EXT_texture_shared_exponent
     GL_EXT_texture_snorm
@@ -346,12 +355,9 @@ Extensions:
     GL_INTEL_fragment_shader_ordering
     GL_KHR_context_flush_control
     GL_KHR_debug
-    GL_KHR_no_error
-    GL_KHR_parallel_shader_compile
     GL_KHR_robust_buffer_access_behavior
     GL_KHR_robustness
     GL_KTX_buffer_region
-    GL_NV_alpha_to_coverage_dither_control
     GL_NV_blend_square
     GL_NV_conditional_render
     GL_NV_copy_depth_to_color
@@ -361,7 +367,6 @@ Extensions:
     GL_NV_float_buffer
     GL_NV_half_float
     GL_NV_primitive_restart
-    GL_NV_shader_atomic_int64
     GL_NV_texgen_reflection
     GL_NV_texture_barrier
     GL_OES_EGL_image
@@ -387,6 +392,7 @@ Texture testing:
 - 2048px textures work.
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
+<<<<<<< HEAD
 <<<<<<< HEAD
 Total time until interface ready: 6.01900005341s
 - Target is 5 frames in 0.333333333333 seconds.
@@ -415,3 +421,6 @@ swap interval: 1 frames
 Windowed mode.
 Screen sizes: virtual=(1280, 720) physical=(1184, 666) drawable=
 >>>>>>> 59bb9d219e23e0f7ec53129f83062633d78d2cb1
+=======
+Total time until interface ready: 7.37800002098s
+>>>>>>> 8c7142ff7518b67c83bae4952c18a424094d8bf5

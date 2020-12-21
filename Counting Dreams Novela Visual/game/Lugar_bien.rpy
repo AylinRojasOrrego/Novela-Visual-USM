@@ -1,5 +1,6 @@
 
 label lugar_bien:
+    $ lugar= 'si'
     annie "La piscina ¿eh?, si le encuentro un poco de sentido vamos"
     "Vas con Annie a la piscina de la universidad en busca de pistas."
     scene piscina with fade
@@ -35,16 +36,16 @@ label lugar_bien:
 
     show annie normal with dissolve
     annie "Decia 'Patio el Cañón', bastante autoexplicatorio"
-
     hide Lugar with dissolve
+
 
     prota "Buena, tenemos una respuesta"
     show annie muyfeliz with dissolve
     if decisiones==1:
-        annie "nos quedan 2 cosas por buscar"
+        annie 'Nos quedan 2 cosas por buscar'
         jump primera_pista
     elif decisiones==2:
-        annie "nos queda 1 pista por encontar"
+        annie "Nos queda 1 pista por encontar"
         jump segunda_pista
     elif decisiones==3:
         annie "No hay nada mas por buscar"

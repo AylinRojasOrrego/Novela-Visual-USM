@@ -1,3 +1,7 @@
+image side annie ok = im.Scale('Annie_Act1_01.png', 540, 910, xoffset=-130, yoffset=600)
+image side annie triste = im.Scale('Annie_Act1_01_Sad.png', 540, 910, xoffset=-130, yoffset=600)
+image side annie feliz = im.Scale('Annie_Act1_02.png', 540, 910, xoffset=-130, yoffset=600)
+image side annie = im.Scale('Nada.png', 0, 0, xoffset=-130, yoffset=600)
 
 label hora_bien:
     #"aqui comienza la escena de la hora_bien"
@@ -29,6 +33,7 @@ label hora_bien:
 
         'Al de las gradas':
             'Vas con Annie a hablar con el chico de las flexiones'
+            $ hora= 'si'
             scene cancha_gradas with fade
             show derek flexiones with dissolve:
                 xzoom 0.40 yzoom 0.40
@@ -55,8 +60,6 @@ label hora_bien:
                 align (0.2 , 0.2)
             with dissolve
 
-            $hr ='22:30[hrs]'
-
             $PistaHora = 'Hora.png'
 
             $pista+=1
@@ -69,8 +72,8 @@ label hora_bien:
             derek 'No hay problema, ahora si me disculpan, debo colocar esta información'
             prota 'Muchas gracias, Dereck'
             show derek feliz with dissolve
-            derek 'Encerio no es nada'
-            derek 'espero nos veamos en la fiesta, estaré esperando!'
+            derek 'En serio, no es nada'
+            derek 'Espero que nos veamos en la fiesta, estaré esperando!'
             hide derek with easeoutright
             'Dereck se marcha con una risa en su cara.'
 
@@ -82,10 +85,10 @@ label hora_bien:
             prota "Buena, tenemos la respuesta"
             show annie muyfeliz with dissolve
             if decisiones==1:
-                annie "nos quedan 2 cosas por buscar"
+                annie "Nos quedan 2 cosas por buscar"
                 jump primera_pista
             elif decisiones==2:
-                annie "nos queda 1 pista por encontar"
+                annie "Nos queda 1 pista por encontar"
                 jump segunda_pista
             elif decisiones==3:
                 annie "No hay nada mas por buscar"
@@ -120,7 +123,7 @@ label hora_bien:
                 xzoom 0.40 yzoom 0.40
                 xpos 400 ypos 100
             annie 'Parece que no la pillamos en su mejor día'
-            prota 'todavía le podemos preguntar al otro chico'
+            prota 'Todavía le podemos preguntar al otro chico'
             'Miras a donde estaba el otro chico, ni él ni sus cosas están'
             show annie muymal with dissolve
             annie 'Vaya, parece que se ha ido'
@@ -137,13 +140,3 @@ label hora_bien:
                 show annie sad_mal
                 annie "Ya no queda más que investigar"
                 jump tercera_pista
-        
-
-
-
-
-
-            
-            
-
-return

@@ -30,15 +30,23 @@ image kylie mirando='Kylie_ActHora_Mirando.png'
 image kylie riendo='Kylie_ActHora_Riendo.png'
 image kylie negando='Kylie_ActHora_Negando.png'
 
+define nadie = Character("????", color="A41923",image='????')
+define cedric = Character("Cedric", color="A41923",image='cedric')
+image cedric serio='Cedric_ActFinal_Enojado.png'
+image cedric normal='Cedric_ActFinal_Feliz.png'
+image cedric escuchando='Cedric_ActFinal_Escuchando.png'
+image cedric escuchandofeliz= 'Cedric_ActFinal_Contraseña Correcta.png' 
+image cedric feliz= 'Cedric_ActFinal_Like.png'
+
 image confesion="confesion.jpg"
 
 image Hora='Hora.png'
 image Lugar='Lugar.png'
-image Contraseña='Contraseña.png'
+image Pass='Contraseña.png'
 
 define PistaHora ='Nada.png'
 define PistaLugar ='Nada.png'
-define PistaContraseña ='Nada.png'
+define PistaPassw ='Nada.png'
 
 image biblioteca="Stage_01.png"
 image inicio= "inicio1.png"
@@ -50,25 +58,30 @@ image cancha_bancas='Cancha_bancas.png'
 image cancha_gradas='Cancha_gradas.png'
 image plaza='Hora_plaza.png'
 image calle="Terraza.png"
+image canon='cañon.png'
+image avenida='avenida.png'
+image canon2= "cañon2.png"
+image canonfiesta='cañon_noche.png'
+image fiesta= 'fiesta.png'
+image final= 'AvenidaEspaña.png'
 
 $ desicion1= ''
 $ desicion2= ''
 $ desicion3= ''  
 $ MiNombre= ''
+
+#  Desiciones erradas
+$ hora= ''
+$ lugar= ''
+$ passw= ''
+
+
 # The game starts here.
 
 label start:
     $ items=[]
     $ showitems= False
     scene inicio
-    menu:
-        "Tay en modo dev?"
-        "Yes pues":
-            "Warning que esto te disablea un par de cosas"
-            $ dev= True
-        "no pue, que es eso del modo dev, aiuda mama, no sé programar":
-            "wenu, continua normal" 
-            $ dev= False   
     
     "Bienvenid@ a Una fiesta entre pistas"
     "Antes de comenzar con la historia, debemos hacerte unas preguntas..."
@@ -87,9 +100,6 @@ label start:
     "Muy bien [MiNombre], comencemos con esta aventura"
 
     scene biblioteca
-
-    if dev:
-        jump modo_dev
     prota "Ha sido una semana difícil, pero he logrado pasar mis certámenes"
     prota "Quizá deba tomarme un descanso, ir a caminar o…"
     prota "Ah mira, ahí viene Annie, ¿le habrá ido bien en su presentación?"
@@ -141,12 +151,8 @@ label start:
 
     show annie normal with dissolve
     annie "No se, escoge tú."
-
-    label modo_dev:
-        if dev:
-            show annie normal with dissolve
                 
-        
+
     menu: 
         "❃Lugar❃":
             $ decision1= "lugar"
@@ -233,17 +239,89 @@ label start:
                         $ decisiones+=1
                         jump lugar
     label tercera_pista:
+        'En conjunto van a la entrada de la Universidad'
+        scene avenida with fade
+        show annie normal with dissolve:
+            xzoom 0.50 yzoom 0.50
+            xpos 700 ypos 150
         prota "Ya hemos revisado todo"
         annie "Veamos que podemos hacer con lo que tenemos"
         if pista==3:
+            show annie muyfeliz with dissolve
             annie "Genial, lo tenemos todo"
             prota "¡Sí!, lo logramos, fue bastante entretenido"
+            show annie happy_bien with dissolve
             annie "Me divertí mucho, gracias por acompañarme"
             prota "Bueno, a usar nuestras pistas, vamos a la fiesta"
             annie "Claro, vamos en camino"
+            hide annie with easeoutright
+            jump GoodEnding
         elif pista==2:
             show annie sad_mal with dissolve
             annie "Vaya, parece que no tenemos más tiempo para buscar más pistas"
+            prota '¿Crees que lo lograremos con lo que tenemos?'
+            show annie pensativa with dissolve
+            annie 'Hmm, estaba pensando la última'
+            annie 'Cuando nos separamos pude encontrar la que nos faltaba'
+            show annie happy_bien with dissolve
+            annie 'Aquí la tengo'
+
+
+            if hora=="no":
+                show Hora:
+                    align (0.2 , 0.2)
+                with dissolve
+
+                $PistaHora = 'Hora.png'
+                $pista+=1
+
+                prota '¡Que lista eres Annie!'
+                hide Hora with dissolve
+                show annie muyfeliz with dissolve
+                annie 'No es nada [MiNombre], detective Annie al rescate'
+                prota 'Bueno detective, tenemos una fiesta a la que atender'
+                jump GoodEnding
+
+
+            elif lugar=='no':
+                show Lugar:
+                    align (0.2 , 0.2)
+                with dissolve
+
+                $PistaLugar = 'Lugar.png'
+                $pista+=1
+
+                prota '¡Que lista eres Annie!'
+                hide Lugar with dissolve
+                show annie muyfeliz with dissolve
+                annie 'No es nada [MiNombre], detective Annie al rescate'
+                prota 'Bueno detective, tenemos una fiesta a la que atender'
+                jump GoodEnding
+
+
+            elif passw=='no':
+                show Pass:
+                    align (0.2 , 0.2)
+                with dissolve
+
+                $PistaPassw = 'Contraseña.png'
+                $pista+=1
+                prota '¡Que lista eres Annie!'
+                show annie muyfeliz with dissolve
+                annie 'No es nada [MiNombre], detective Annie al rescate'
+                prota 'Bueno detective, tenemos una fiesta a la que atender'
+                jump GoodEnding
+                
+
+                prota '¡Que lista eres Annie!'
+                hide pass with dissolve
+                show annie muyfeliz with dissolve
+                annie 'No es nada [MiNombre], detective Annie al rescate'
+                prota 'Bueno detective, tenemos una fiesta a la que atender'
+                jump GoodEnding
+
+            
+
         elif pista<=1:
             prota "Vaya, nos fue bastante mal"
             annie "Si..."
@@ -254,62 +332,12 @@ label start:
             annie "Oh ,cierto, estábamos en la mejor parte"
             prota "¿Quién crees que sea el asesino?"
             show annie pensativa with dissolve
-            annie " Así como está la historia ahora…y las pistas que han dejado en las escenas post créditos.., siento que puede ser…."
+            annie " Así como está la historia ahora...y las pistas que han dejado en las escenas post créditos.., siento que puede ser..."
             "A pesar de no poder ir a la fiesta, decides pasar la noche en casa de Annie, resolviendo crímenes de una serie de televisión"
             "Puedes volver a jugar esta historia, para resolver el acertijo e ir a la fiesta"
             "Suerte!"
             return
-        #cambio de escena (donde, ni idea)
-        "Te diriges al Patio del Cañón, donde las pistas te dijeron que era el lugar indicado"
-        "A pesar de no ser tan tarde, está un poco oscuro"
-        "Se siente un poco vacío…"
-        annie "Ya estamos en el cañón y a la hora indicada"
-        prota "¿Dónde está el resto?"
-        "Te paseas un rato, pero no ves a nadie"
-        annie "Que raro, si esto es lo que indican las pistas"
-        "De repente, escuchas algo que no calza con la oscuridad a la lejanía"
-        "¿Es eso música?"
-        prota "Creo que estoy escuchando algo, iré a ver"
-        annie "Somos un equipo, voy contigo"
-        #cambio de escena¿
-        "Te acercas un poco más al sonido, parece venir de un salón"
-        annie "Parece que la fiesta está dentro, vamos , golpeemos a la puerta"
-        "Golpeas ligeramente la puerta"
-        "Sin mucho tiempo para esperar respuesta, alguien la abre lentamente"
-        #aca me falta un personaje?
-        #??? ¿Encontraron las pistas?
-        "No puedes distinguir totalmente, pero la silueta que se dibuja tras la puerta parece bastante alta"
-        prota "Si, como puedes ver, llegamos al lugar indicado y a la hora indicada"
-        "La puerta se abre un poco más y la figura es un poco más visible"
-        annie "Ah, es Cedrik, jelou"
-        #cedrick "oh, Annie, sabría que vendrías, no dejarías pasar una “investigación” como esta"
-        prota "¿De dónde se conocen?"
-        annie "Éramos grupo de laboratorio, hasta que nos cambiaron"
-        #cedrick "Sep, ojala te trate bien tu nuevo equipo, pero volviendo al tema, ¿Tienen la contraseña?"
-        prota "Claro, claro"
-        annie "La contraseña es “Prestigio”"
-        #cedrick "Excelente trabajo, entren y disfruten de los frutos de su búsqueda"
-        #escena de un salon/disco
-        "Entras con Annie al salón, hay un ambiente bastante motivador"
-        "La música te lleva a dimensiones que ni sabias que existían"
-        "Las horas pasan volando, y bailaste cada segundo que pusiste"
-        "El ambiente ya se esta tranquilizando"
-        annie "Wow, esto fue muy entretenido"
-        prota "Seh, sirvió harto para relajarnos de los certámenes"
-        annie "Ojala hicieran esto de buscar pistas mas seguido"
-        prota "No creo que todos tengan nuestro tiempo"
-        annie "Cierto, en todo caso, ya como que es la hora de largarnos"
-        "Revisas tu celular, tiene poca batería y es casi de madrugada"
-        prota "Cierto, retirémonos por ahora"
-        "Sales del salón con Annie y ambos parten una caminata hacia sus hogares"
-        #escena calle de noche
-        "La noche esta tranquila y tienes una conversación placentera con Annie"
-        "Al momento de separar caminos, Annie se despide con un beso en la mejilla"
-        #escena de una habitacion
-        "Al llegar a casa, vas derechito a tu cama"
-        prota "Fue un gran día"
-        "The End"
-        return
+        
     # This ends the game.
 
     return

@@ -1,4 +1,5 @@
 label hora_mal:
+    $ hora= 'no'
 
     "Decides ir a una plaza cerca de la universidad con Annie en busca de pistas"
     annie "Vamos entonces"
@@ -7,7 +8,7 @@ label hora_mal:
     show annie normal with easeinright:
         xzoom 0.40 yzoom 0.40
         xpos 400 ypos 100
-    prota "no hay mucho a quien preguntar, separémonos en busca de algún papel pegado con información"
+    prota "No hay mucho a quien preguntar, separémonos en busca de algún papel pegado con información"
     annie "Detective Annie en camino"
     hide annie with easeoutright
     "Te separas de Annie, en busca de alguna pista que te ayude a entrar a la fiesta."
@@ -19,6 +20,7 @@ label hora_mal:
         xpos 400 ypos 100
     annie "¿Cómo te fue [MiNombre], encontraste algo?"
     prota "Nop, tuve mala suerte, ¿tu?"
+    show annie muymal with dissolve
     annie "Nada tampoco,parece que no fue buena idea venir a buscar a la plaza"
     prota "Seh…"
     if decisiones==1:
