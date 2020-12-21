@@ -58,7 +58,7 @@ label GoodEnding:
     cedric '¡Hey! acabo de conseguir un tiempo de descanso de la portería'
     cedric '¿Me dejarían pasar el rato con ustedes?'
     show derek hablando with dissolve
-    prota 'Porsupuesto, quedate con nosotros este es Derek'
+    prota 'Por supuesto, quedate con nosotros este es Derek'
     annie feliz 'mientras más, mejor'
     show cedric feliz with dissolve
     cedric 'Genial... Hola mi nombre es Cedric, un gusto'

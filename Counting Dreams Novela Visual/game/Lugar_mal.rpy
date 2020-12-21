@@ -28,7 +28,7 @@ label lugar_mal:
     annie "Seh, yo también, lo peor es que no conseguimos ni una sola pista"
     prota "Parece la playa no era la respuesta a ese acertijo, ¿Lo intentamos resolver de nuevo?"
     annie "nah, volvamos a la universidad, y tratemos de resolver el resto de acertijos"
-    prota "“¿Porque te rindes así? "
+    prota "¿Porque te rindes así? "
     show annie sad_mal with dissolve
     annie "Es que a pasado el tiempo volando mientras buscábamos esto, y a este paso, no conseguiremos el resto de las pistas"
     prota "Tienes razón Annie, volvamos a la Universidad y probemos otra cosa"

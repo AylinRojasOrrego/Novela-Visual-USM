@@ -65,9 +65,9 @@ label contraseña_bien:
     "Tomas el papel y lo abres"
     show annie muyfeliz with dissolve
     annie '¿Ah sí?, a ver, quiero verlo'
-    "“Felicidades por encontrar esto, tu recompensa es la contraseña para la fiesta“"
+    "Felicidades por encontrar esto, tu recompensa es la contraseña para la fiesta“"
     "Antes de llevarte el papel al bolsillo, lees:"
-    "“Por favor deja el papel en el mismo lugar, para que otros aventureros como tú lo puedan encontrar“"
+    "Por favor deja el papel en el mismo lugar, para que otros aventureros como tú lo puedan encontrar“"
     "Haces como dice el papel y lo pones en la boca del cañón"
     "Le dices a Annie la contraseña y ella la anota"
     show Pass:
