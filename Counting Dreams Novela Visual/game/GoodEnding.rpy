@@ -59,13 +59,13 @@ label GoodEnding:
     cedric '¿Me dejarían pasar el rato con ustedes?'
     show derek hablando with dissolve
     prota 'Por supuesto, quedate con nosotros este es Derek'
-    annie feliz 'mientras más, mejor'
+    annie feliz 'Mientras más, mejor'
     show cedric feliz with dissolve
     cedric 'Genial... Hola mi nombre es Cedric, un gusto'
     show derek mostrando with dissolve
-    derek 'el placer es mio'
-    annie muchofeliz 'esta noche será maravillosa, no es así [MiNombre]?'
-    prota 'tienes razón Annie... Lo será'
+    derek 'El placer es mio'
+    annie muchofeliz 'Esta noche será maravillosa, no es así [MiNombre]?'
+    prota 'Tienes razón Annie... Lo será'
     scene fiesta with dissolve
     'Las horas pasan volando, y bailaste cada segundo que pudiste'
     'El ambiente ya se esta tranquilizando'

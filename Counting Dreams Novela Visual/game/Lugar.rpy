@@ -1,5 +1,6 @@
 label lugar:
     #"Aquí comienza la escena de lugar"
+    play music "Music-aventura.m4a"
     "Con Annie decides ir en búsqueda del lugar de la fiesta"
     prota "¿Por dónde empezamos?"
     show annie happy_bien with dissolve
@@ -19,8 +20,8 @@ label lugar:
     show annie happy_bien with dissolve
     prota "Ah, un poema, ¿A qué se referirá?"
     show annie pensativa with dissolve
-    annie "Bueno, creo que se puede referir a la playa"
-    prota "Hmm, yo estaba pensando en la piscina de la universidad"
+    annie "Bueno,yo estaba pensando en la piscina de la universidad"
+    prota "Hm, creo que se puede referir a la playa"
     show annie happy_bien with dissolve
     annie "Bueno, tu escoges ahora, ¿Dónde quieres ir a buscar?"
     menu Decision_lugar:

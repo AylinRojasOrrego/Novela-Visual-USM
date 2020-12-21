@@ -1,6 +1,7 @@
 
 label contraseña:
     "Decides buscar la contraseña para entrar a la fiesta"
+    play music "Music-aventura.m4a"
     prota "¿En qué parte buscamos?"
     annie "Veamos..."
     "Annie saca su celular, para revisar si la publicación da algún indicio"
