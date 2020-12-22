@@ -39,8 +39,10 @@ label GoodEnding:
     show cedric escuchandofeliz with dissolve
     cedric 'Excelente trabajo, entren y disfruten de los frutos de su búsqueda'
     'Cedric les muestra el camino hacia en verdadero lugar de la fiesta'
+    stop music fadeout 5.0
 
     scene fiesta with fade
+    play music "fiesta.mp3"
     'Entras con Annie al salón, hay un ambiente bastante motivador'
     'La música te lleva a dimensiones que ni sabias que existían'
     show derek hablando with easeinright:
@@ -81,11 +83,15 @@ label GoodEnding:
     'Revisas tu celular, tiene poca batería y es casi de madrugada'
     prota 'Cierto, retirémonos por ahora'
     'Te despides de los amigos que hiciste en esta travesia, sales del salón con Annie y ambos parten una caminata hacia sus hogares'
-
+    stop music fadeout 5.0
+    play music 'night.mp3'
     scene final with fade
+
     'La noche esta tranquila y tienes una conversación placentera con Annie'
     'Al momento de separar caminos, Annie se despide con un beso en la mejilla'
     'Llegas a tu hogar y te recuestas en tu cama, tienes que esa fue una noche para recordar'
-    hide final with fade
+    scene negro with fade
+    stop music fadeout 5.0
     'Y así mismo te quedas dormido lleno de emocion y felicidad para afrontar lo que sea...'
+    
 

@@ -64,6 +64,9 @@ image canon2= "cañon2.png"
 image canonfiesta='cañon_noche.png'
 image fiesta= 'fiesta.png'
 image final= 'AvenidaEspaña.png'
+image negro= 'negro.png'
+image PeliculaMujer= 'Movie_Girl.png'
+image PeliculaHombre='Movie_Boy.png'
 
 $ desicion1= ''
 $ desicion2= ''
@@ -323,9 +326,11 @@ label start:
             
 
         elif pista<=1:
+            show annie muymal with dissolve
             prota "Vaya, nos fue bastante mal"
             annie "Si..."
             prota "Quiza deberiamos haber buscado en otros lugares"
+            show annie sad_mal with dissolve
             annie "Que mal, no pude sacar a luz mis habilidades de detective"
             prota "Oye Annie, no te preocupes tanto por eso"
             prota "Puede que no podamos ir a la fiesta, pero recuerda que tenemos una serie pendiente"
@@ -333,9 +338,23 @@ label start:
             prota "¿Quién crees que sea el asesino?"
             show annie pensativa with dissolve
             annie " Así como está la historia ahora...y las pistas que han dejado en las escenas post créditos.., siento que puede ser..."
-            "A pesar de no poder ir a la fiesta, decides pasar la noche en casa de Annie, resolviendo crímenes de una serie de televisión"
-            "Puedes volver a jugar esta historia, para resolver el acertijo e ir a la fiesta"
-            "Suerte!"
+            stop music fadeout 5.0
+            play music 'night.mp3'
+            if genero=='Chica':
+                scene PeliculaMujer with fade
+                "A pesar de no poder ir a la fiesta, decides pasar la noche en casa de Annie, resolviendo crímenes de una serie de televisión"
+                "Puedes volver a jugar esta historia, para resolver el acertijo e ir a la fiesta"
+                scene negro with fade
+                "Suerte!"
+
+            elif genero=='Chico':
+                scene PeliculaHombre with fade
+                "A pesar de no poder ir a la fiesta, decides pasar la noche en casa de Annie, resolviendo crímenes de una serie de televisión"
+                "Puedes volver a jugar esta historia, para resolver el acertijo e ir a la fiesta"
+                scene negro with fade
+                "Suerte!"
+
+            
             return
         
     # This ends the game.

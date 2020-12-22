@@ -43,13 +43,13 @@ label lugar_mal:
     
     if decisiones==1:
         annie "Bueno... nos quedan 2 cosas por buscar"
-        stop sound 5.0
+        stop sound fadeout 5.0
         jump primera_pista
     elif decisiones==2:
         annie "Bueno... nos queda 1 pista por encontar"
-        stop sound 5.0
+        stop sound fadeout 5.0
         jump segunda_pista
     elif decisiones==3:
         annie "Rayos... no hay nada mas por investigar" 
-        stop sound 5.0  
+        stop sound fadeout 5.0
         jump tercera_pista
