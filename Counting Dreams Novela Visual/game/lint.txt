@@ -1,0 +1,49 @@
+﻿
+Ren'Py 7.3.5.606 lint report, generated at: Thu Dec 10 19:10:19 2020
+
+game/Hora.rpy:35 The jump is to nonexistent label 'hora_mal'.
+
+game/Lugar.rpy:8 'annie_phone' is not an image.
+
+game/Lugar.rpy:18 'annie_happy_bien' is not an image.
+
+game/Lugar.rpy:23 'annie_pensativa' is not an image.
+
+game/Lugar.rpy:27 'annie_happy_bien' is not an image.
+
+game/Lugar_bien.rpy:10 'annie_happy_bien' is not an image.
+
+game/Lugar_bien.rpy:16 'annie_muyfeliz' is not an image.
+
+game/Lugar_bien.rpy:28 'annie_happy_bien' is not an image.
+
+game/Lugar_bien.rpy:45 The jump is to nonexistent label 'segunda_pista'.
+
+game/Lugar_bien.rpy:48 The jump is to nonexistent label 'tercera_pista'.
+
+game/Lugar_mal.rpy:46 The jump is to nonexistent label 'segunda_pista'.
+
+game/Lugar_mal.rpy:49 The jump is to nonexistent label 'tercera_pista'.
+
+Contraseña.rpy contains non-ASCII characters in its filename.
+(ZIP file distributions can only reliably include ASCII filenames.)
+
+Contraseña.rpyc contains non-ASCII characters in its filename.
+
+images/Cedric_ActFinal_Contraseña Correcta.png contains non-ASCII characters in its filename.
+
+images/Cedric_ActFinal_Contraseña Incorreecta.png contains non-ASCII characters in its filename.
+
+images/Dereck_ActHora_Señalando.png contains non-ASCII characters in its filename.
+
+
+Statistics:
+
+The game contains 125 dialogue blocks, containing 1,029 words and 5,786
+characters, for an average of 8.2 words and 46 characters per block.
+
+The game contains 10 menus, 30 images, and 23 screens.
+
+
+Lint is not a substitute for thorough testing. Remember to update Ren'Py
+before releasing. New releases fix bugs and improve compatibility.

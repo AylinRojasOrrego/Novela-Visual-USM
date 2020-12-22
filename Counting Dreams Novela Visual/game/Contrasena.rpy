@@ -1,5 +1,5 @@
 
-label contraseña:
+label contrasena:
     "Decides buscar la contraseña para entrar a la fiesta"
     play music "Music-aventura.m4a"
     prota "¿En qué parte buscamos?"
@@ -17,9 +17,9 @@ label contraseña:
     annie "Quiero creer que es por algún bar cercano"
     prota "Podría ser el patio del Cañón"
     show annie pensativa with dissolve
-    menu Desición_contraseña:
+    menu Desición_contrasena:
         annie '¿En dónde deberíamos buscar?'
         'Dirijámonos al Cañon':
-            jump contraseña_bien
+            jump contrasena_bien
         'Revisemos en los bares':
-            jump contraseña_mal
+            jump contrasena_mal

@@ -19,7 +19,7 @@ image derek flexiones='Dereck_ActHora_DespuesFlexiones.png'
 image derek sorprendido='Dereck_ActHora_Sorprendido.png'
 image derek hablando='Dereck_ActHora_Respondiendo.png'
 image derek feliz='Dereck_ActHora_RespondiendoFeliz.png'
-image derek mostrando='Dereck_ActHora_Señalando.png'
+image derek mostrando='Dereck_ActHora_Senalando.png'
 image derek pensando='Dereck_ActHora_Pensando.png'
 
 define kylie = Character('Kylie', color='EE54FF', image='kylie')
@@ -35,14 +35,14 @@ define cedric = Character("Cedric", color="A41923",image='cedric')
 image cedric serio='Cedric_ActFinal_Enojado.png'
 image cedric normal='Cedric_ActFinal_Feliz.png'
 image cedric escuchando='Cedric_ActFinal_Escuchando.png'
-image cedric escuchandofeliz= 'Cedric_ActFinal_Contraseña Correcta.png' 
+image cedric escuchandofeliz= 'Cedric_ActFinal_Contrasena Correcta.png' 
 image cedric feliz= 'Cedric_ActFinal_Like.png'
 
 image confesion="confesion.jpg"
 
 image Hora='Hora.png'
 image Lugar='Lugar.png'
-image Pass='Contraseña.png'
+image Pass='Contrasena.png'
 
 define PistaHora ='Nada.png'
 define PistaLugar ='Nada.png'
@@ -58,12 +58,12 @@ image cancha_bancas='Cancha_bancas.png'
 image cancha_gradas='Cancha_gradas.png'
 image plaza='Hora_plaza.png'
 image calle="Terraza.png"
-image canon='cañon.png'
+image canon='canon.png'
 image avenida='avenida.png'
-image canon2= "cañon2.png"
-image canonfiesta='cañon_noche.png'
+image canon2= "canon2.png"
+image canonfiesta='canon_noche.png'
 image fiesta= 'fiesta.png'
-image final= 'AvenidaEspaña.png'
+image final= 'AvenidaEspana.png'
 image negro= 'negro.png'
 image PeliculaMujer= 'Movie_Girl.png'
 image PeliculaHombre='Movie_Boy.png'
@@ -171,7 +171,7 @@ label start:
             $ decision1= "contraseña"
             $ decisiones=1
             $ pista=0
-            jump contraseña 
+            jump contrasena 
     
     label primera_pista:
         if pista==1:
@@ -190,7 +190,7 @@ label start:
                     "Contraseña☳":
                         $ decision2= "contraseña"
                         $ decisiones+=1
-                        jump contraseña
+                        jump contrasena
         elif decision1=="hora":
                 menu:
                     annie"tenemos estas opciones"
@@ -201,7 +201,7 @@ label start:
                     "Contraseña☳":
                         $ decision2= "contraseña"
                         $ decisiones+=1
-                        jump contraseña
+                        jump contrasena
         elif decision1=="contraseña":
                 menu:
                     annie"Tenemos estas opciones"
@@ -225,7 +225,7 @@ label start:
                     "Contraseña☳":
                         $ decision3= "contraseña"
                         $ decisiones+=1
-                        jump contraseña
+                        jump contrasena
         elif (decision2=="lugar" and decision1=='contraseña') or (decision1=="lugar" and decision2=='contraseña'):
                 menu:
                     annie"Tenemos esta opción"

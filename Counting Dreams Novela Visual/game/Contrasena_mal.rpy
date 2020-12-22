@@ -1,6 +1,6 @@
 image annie muymal = 'Annie_Act1_02_Mala Desicion.png'
 image annie sad_mal="Annie_Act1_01_Sad.png"
-label contraseña_mal:
+label contrasena_mal:
     $ passw= 'no'
 
     "Decides con Annie ir a unos bares no tan lejos de la universidad"

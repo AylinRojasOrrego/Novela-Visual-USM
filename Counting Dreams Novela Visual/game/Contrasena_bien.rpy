@@ -1,7 +1,7 @@
 image annie muymal = 'Annie_Act1_02_Mala Desicion.png'
 image annie sad_mal="Annie_Act1_01_Sad.png"
 image side annie= im.Scale('Nada.png', 0, 0, xoffset=-130, yoffset=600)
-label contraseña_bien:
+label contrasena_bien:
     "Decides ir al cañón con Annie"
     scene canon with fade
     show annie happy_bien with dissolve:
