@@ -310,7 +310,7 @@ label start:
                     align (0.2 , 0.2)
                 with dissolve
 
-                $PistaPassw = 'Contraseña.png'
+                $PistaPassw = 'Contrasena.png'
                 $pista+=1
                 prota '¡Que lista eres Annie!'
                 show annie muyfeliz with dissolve

@@ -4,6 +4,7 @@ image side annie feliz = im.Scale('Annie_Act1_02.png', 540, 910, xoffset=-130, y
 image side annie = im.Scale('Nada.png', 0, 0, xoffset=-130, yoffset=600)
 
 label hora_bien:
+    $ hora = "si"
     #"aqui comienza la escena de la hora_bien"
     annie '¿Qué esperamos entonces? En marcha'
     'Te diriges con Annie hacia la cancha de la universidad'

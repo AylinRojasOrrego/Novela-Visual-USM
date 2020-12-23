@@ -2,6 +2,7 @@ image annie muymal = 'Annie_Act1_02_Mala Desicion.png'
 image annie sad_mal="Annie_Act1_01_Sad.png"
 image side annie= im.Scale('Nada.png', 0, 0, xoffset=-130, yoffset=600)
 label contrasena_bien:
+    $ passw= "si"
     "Decides ir al cañón con Annie"
     scene canon with fade
     show annie happy_bien with dissolve:
@@ -76,7 +77,7 @@ label contrasena_bien:
     with dissolve
     show annie mirando_cel with dissolve
     annie "Listo, ya lo escribí"
-    $PistaPassw = 'Contraseña.png'
+    $PistaPassw = 'Contrasena.png'
     $pista+=1
     hide Pass with dissolve
     show annie happy_bien with dissolve
