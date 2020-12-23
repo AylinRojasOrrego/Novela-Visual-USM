@@ -271,6 +271,7 @@ label start:
 
 
             if hora=="no":
+                play sound "musiquita.pistas.mp3"
                 show Hora:
                     align (0.2 , 0.2)
                 with dissolve
@@ -287,6 +288,7 @@ label start:
 
 
             elif lugar=='no':
+                play sound "musiquita.pistas.mp3"
                 show Lugar:
                     align (0.2 , 0.2)
                 with dissolve
@@ -303,6 +305,7 @@ label start:
 
 
             elif passw=='no':
+                play sound "musiquita.pistas.mp3"
                 show Pass:
                     align (0.2 , 0.2)
                 with dissolve

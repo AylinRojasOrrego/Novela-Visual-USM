@@ -23,6 +23,7 @@ label lugar_bien:
         xpos 500 ypos 200
     annie "¡[MiNombre]! ya lo encontré, parece que se despegó y por eso nos costó encontrarlo"
     prota "Genial, ¿Cuál es la respuesta entonces?"
+    play sound "musiquita.pistas.mp3"
 
     show Lugar:
         align (0.2 , 0.2)

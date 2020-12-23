@@ -65,11 +65,12 @@ label contrasena_bien:
     "Tomas el papel y lo abres"
     show annie muyfeliz with dissolve
     annie '¿Ah sí?, a ver, quiero verlo'
-    "Felicidades por encontrar esto, tu recompensa es la contraseña para la fiesta“"
+    "“Felicidades por encontrar esto, tu recompensa es la contraseña para la fiesta“"
     "Antes de llevarte el papel al bolsillo, lees:"
-    "Por favor deja el papel en el mismo lugar, para que otros aventureros como tú lo puedan encontrar“"
+    "“Por favor deja el papel en el mismo lugar, para que otros aventureros como tú lo puedan encontrar“"
     "Haces como dice el papel y lo pones en la boca del cañón"
     "Le dices a Annie la contraseña y ella la anota"
+    play sound "musiquita.pistas.mp3"
     show Pass:
         align (0.05 , 0.2)
     with dissolve
@@ -80,10 +81,10 @@ label contrasena_bien:
     hide Pass with dissolve
     show annie happy_bien with dissolve
     if decisiones==1:
-        annie "nos quedan 2 cosas por buscar"
+        annie "Nos quedan 2 cosas por buscar"
         jump primera_pista
     elif decisiones==2:
-        annie "nos queda 1 pista por encontar"
+        annie "Nos queda 1 pista por encontar"
         jump segunda_pista
     elif decisiones==3:
         annie "No hay nada mas por buscar"

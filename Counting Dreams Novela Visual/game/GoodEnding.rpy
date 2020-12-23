@@ -17,7 +17,7 @@ label GoodEnding:
     prota '¿Dónde está el resto?'
     hide annie with dissolve
     'Te paseas un rato, pero no ves a nadie'
-    prota 'Que raro, si esto es lo que indican las pistas'
+    prota 'Que raro..., si esto es lo que indican las pistas'
     'En ese momento escuchas la voz grave viniendo de atrás'
     nadie '¿Encontraron las pistas?'
     'No puedes distinguir totalmente, pero la silueta que se dibuja parece bastante alta'

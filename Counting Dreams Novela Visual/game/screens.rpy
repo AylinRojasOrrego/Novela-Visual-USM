@@ -563,7 +563,7 @@ screen about():
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]\n\nHemlo,gracias por pasar al Sobre\nTrabajar en este projecto ha sido bastante entrentenido\nEspecialmente gracias al apoyo de mi equipo\n-Berry <3")
+            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]\n\n“Hemlo,gracias por pasar al Sobre\nTrabajar en este projecto ha sido bastante entrentenido\nEspecialmente gracias al apoyo de mi equipo“\n-Berry <3\nTodos los creditos de la musica van hacia Kevin Mcleod, el cual no tiene copyright con ellas\nLas imágenes para los fondos se atribuyen a Google Maps\nCréditos a los respectivos autores con las partes de los modelos\nCréditos a ZapSplat por el uso de sonidos\nCréditos a la página de Instagram @confesionesusm por utilizar su nombre e imagen para esta historia\nTodos los personajes son de creación original, y tanto ellos como la historia son de caracter ficticio\nCreado sin fines de lucro")
 
 
 ## This is redefined in options.rpy to add text to the about screen.
