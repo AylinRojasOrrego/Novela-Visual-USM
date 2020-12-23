@@ -241,6 +241,9 @@ label start:
                         $ decision3= "lugar"
                         $ decisiones+=1
                         jump lugar
+
+## Elección del Final dependiendo del puntaje #######################################################################
+##
     label tercera_pista:
         'En conjunto van a la entrada de la Universidad'
         scene avenida with fade
@@ -249,6 +252,8 @@ label start:
             xpos 700 ypos 150
         prota "Ya hemos revisado todo"
         annie "Veamos que podemos hacer con lo que tenemos"
+
+        ## Todas las pistas ##
         if pista==3:
             show annie muyfeliz with dissolve
             annie "Genial, lo tenemos todo"
@@ -259,6 +264,9 @@ label start:
             annie "Claro, vamos en camino"
             hide annie with easeoutright
             jump GoodEnding
+
+        
+        ## Dos pistas ##
         elif pista==2:
             show annie sad_mal with dissolve
             annie "Vaya, parece que no tenemos más tiempo para buscar más pistas"
@@ -327,7 +335,7 @@ label start:
                 jump GoodEnding
 
             
-
+        ## Menos de una pista ##
         elif pista<=1:
             show annie muymal with dissolve
             prota "Vaya, nos fue bastante mal"
@@ -343,6 +351,8 @@ label start:
             annie " Así como está la historia ahora...y las pistas que han dejado en las escenas post créditos.., siento que puede ser..."
             stop music fadeout 5.0
             play music 'night.mp3'
+
+            ## Final malo dependiendo del genero ##
             if genero=='Chica':
                 scene PeliculaMujer with fade
                 "A pesar de no poder ir a la fiesta, decides pasar la noche en casa de Annie, resolviendo crímenes de una serie de televisión"
