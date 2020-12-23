@@ -55,7 +55,7 @@ label hora_bien:
             show derek mostrando with dissolve
             derek 'En efecto, yo era el encargado de colocar la pista cerca de la cancha'
             'Annie le entrega su celular y Derek escribe la pista'
-            play sound "musiquita.pistas.mp3"
+            play sound "musiquita-pistas.mp3"
 
             show Hora:
                 align (0.2 , 0.2)

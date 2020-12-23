@@ -70,7 +70,7 @@ label contrasena_bien:
     "“Por favor deja el papel en el mismo lugar, para que otros aventureros como tú lo puedan encontrar“"
     "Haces como dice el papel y lo pones en la boca del cañón"
     "Le dices a Annie la contraseña y ella la anota"
-    play sound "musiquita.pistas.mp3"
+    play sound "musiquita-pistas.mp3"
     show Pass:
         align (0.05 , 0.2)
     with dissolve
